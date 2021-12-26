@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/App.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"hexa-official-web.78399e21.css","sourceRoot":"..","sourcesContent":["html,\nbody {\n  margin: 0;\n}\n\nbody {\n  min-height: 100vh;\n}\n"]}
