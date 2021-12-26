@@ -1,7 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/common/Navbar';
+import { Home } from './views/Home';
+import './App.css';
 
-const App = () => {
-  return <h1>First commit</h1>;
+export const App = () => {
+  return routing;
 };
 
-export default App;
+const routing = (
+  <Router>
+    <Navbar />
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+    </Routes>
+  </Router>
+);

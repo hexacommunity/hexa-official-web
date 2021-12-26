@@ -1,0 +1,20 @@
+{
+  "accounts": [
+    {
+      "name": "github",
+      "url": "https://github.com/hexacommunity"
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/community_hexa"
+    },
+    {
+      "name": "instagram",
+      "url": "https://www.instagram.com/hexa_community"
+    },
+    {
+      "name": "discord",
+      "url": "https://discord.gg/dqGPPZrR"
+    }
+  ]
+}
