@@ -5,8 +5,5 @@ export const MAIN_THEME = {
     background: {
       default: COLORS.backgroundColor
     }
-  },
-  typography: {
-    fontFamily: ['Poppins', 'serif'].join(',')
   }
 };

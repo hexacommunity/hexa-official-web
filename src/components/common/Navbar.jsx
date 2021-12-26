@@ -7,15 +7,19 @@ import { Logo } from './Logo';
 
 const useStyles = makeStyles((theme) => ({
   navbarContainer: {
-    background: COLORS.navBar
+    background: COLORS.navBar,
+    minHeight: '10vh',
+    [theme.breakpoints.down('sm')]: {
+      minHeight: '15vh'
+    }
   }
 }));
 
 export const Navbar = () => {
   const classes = useStyles();
   return (
-    <AppBar position="static" className={classes.navbarContainer}>
-      <Toolbar>
+    <AppBar position="static">
+      <Toolbar className={classes.navbarContainer}>
         <Logo />
       </Toolbar>
     </AppBar>

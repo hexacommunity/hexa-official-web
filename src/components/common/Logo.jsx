@@ -19,10 +19,17 @@ const useStyles = makeStyles((theme) => ({
 
 export const Logo = () => {
   const classes = useStyles();
+
+  let width = window.innerWidth;
+  let logoHeight = '48px';
+
+  if (width < 768) {
+    logoHeight = '72px';
+  }
   return (
     <div className={classes.logoContainer}>
       <Link className={classes.logoLink} to="/">
-        <img src={logoImage} alt="logo" height="48px" />
+        <img src={logoImage} alt="logo" height={logoHeight} />
       </Link>
     </div>
   );

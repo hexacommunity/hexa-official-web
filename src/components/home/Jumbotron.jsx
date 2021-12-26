@@ -6,9 +6,13 @@ import about from '../../constants/about.json';
 import hexaLogo from '../../styles/images/logo_black.png';
 
 const useStyles = makeStyles((theme) => ({
+  jumbotronContainer: {
+    minHeight: '100vh',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
   bannerImage: {
-    width: '400px',
-    heigth: '00px'
+    width: '400px'
   },
   intro: {
     marginTop: '4vh',
@@ -19,13 +23,7 @@ const useStyles = makeStyles((theme) => ({
 export const Jumbotron = () => {
   const classes = useStyles();
   return (
-    <Grid
-      container
-      spacing={0}
-      direction="column"
-      alignItems="center"
-      justifyContent="center"
-      style={{ minHeight: '100vh' }}>
+    <Grid className={classes.jumbotronContainer} container spacing={0} direction="column">
       <img src={hexaLogo} alt="hexa-official-icon" className={classes.bannerImage} />
       <Typography variant="h6" className={classes.intro}>
         {about.intro}

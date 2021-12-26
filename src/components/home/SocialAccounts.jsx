@@ -9,26 +9,38 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import socialMedia from '../../constants/socialMediaAccounts.json';
 import { SOCIAL_MEDIA_COLORS } from '../../styles/variables/colors';
+import { isMobile } from 'react-device-detect';
 
 const useStyles = makeStyles((theme) => ({
   socialMediaContainer: {
     position: 'fixed',
     left: '60px',
     bottom: 0,
-    display: 'flex',
     overflow: 'hidden',
     listStyle: 'none',
-    textAlign: 'center'
+    textAlign: 'center',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      bottom: '%20'
+    }
   },
   list: {
     listStyle: 'none',
-    padding: 0
+    padding: 0,
+    [theme.breakpoints.down('sm')]: {
+      display: 'flex',
+      textAlign: 'center',
+      justifyContent: 'center'
+    }
   },
   socialLinkItem: {
     marginBottom: '30px',
     transition: 'transform 250ms',
     '&:hover': {
       transform: 'translateY(-2px)'
+    },
+    [theme.breakpoints.down('sm')]: {
+      marginRight: '50px'
     }
   },
   icon: {
@@ -59,7 +71,6 @@ const useStyles = makeStyles((theme) => ({
 export const SocialAccounts = () => {
   const classes = useStyles();
   const accounts = socialMedia.accounts;
-
   return (
     <div className={classes.socialMediaContainer}>
       <ul className={classes.list}>
