@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './src/App';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+import 'typeface-cormorant';
+
+import { App } from './src/App';
 import { MAIN_THEME } from './src/styles/variables/themes';
 
 const rootElement = document.getElementById('root');
