@@ -1,5 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { AppBar, Toolbar } from '@material-ui/core/';
+import { isMobile } from 'react-device-detect';
+import { COLORS, SOCIAL_MEDIA_COLORS } from '../../styles/variables/colors';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faGithubSquare,
@@ -8,43 +11,35 @@ import {
   faDiscord
 } from '@fortawesome/free-brands-svg-icons';
 import socialMedia from '../../constants/socialMediaAccounts.json';
-import { SOCIAL_MEDIA_COLORS } from '../../styles/variables/colors';
-import { isMobile } from 'react-device-detect';
 
 const useStyles = makeStyles((theme) => ({
-  socialMediaContainer: {
-    position: 'fixed',
-    left: '60px',
-    bottom: 0,
-    overflow: 'hidden',
-    listStyle: 'none',
-    textAlign: 'center',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-      bottom: '%20'
-    }
+  appBar: {
+    top: 'auto',
+    bottom: 0
   },
-  list: {
+  socialAccountsBar: {
+    background: COLORS.navBar,
+    minHeight: '10vh',
+    display: 'flex',
+    justifyContent: 'center',
     listStyle: 'none',
-    padding: 0,
     [theme.breakpoints.down('sm')]: {
-      display: 'flex',
-      textAlign: 'center',
-      justifyContent: 'center'
+      minHeight: '18vh'
     }
   },
   socialLinkItem: {
-    marginBottom: '30px',
     transition: 'transform 250ms',
+    margin: '0 32px',
+
     '&:hover': {
       transform: 'translateY(-2px)'
-    },
-    [theme.breakpoints.down('sm')]: {
-      marginRight: '50px'
     }
   },
+  mobilLinkItem: {
+    margin: '0 64px'
+  },
   icon: {
-    color: '#000'
+    color: '#fff'
   },
   github: {
     '&:hover path': {
@@ -68,52 +63,57 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export const SocialAccounts = () => {
+export const SocialAccountsBar = () => {
   const classes = useStyles();
+  let iconSize = '3x';
+  let iconCss = isMobile ? classes.mobilLinkItem : classes.socialLinkItem;
+  if (isMobile) {
+    iconSize = '6x';
+  }
   const accounts = socialMedia.accounts;
   return (
-    <div className={classes.socialMediaContainer}>
-      <ul className={classes.list}>
-        <li className={classes.socialLinkItem}>
+    <AppBar position="fixed" className={classes.appBar}>
+      <Toolbar className={classes.socialAccountsBar}>
+        <li className={iconCss}>
           <a
             href={accounts[0].url}
             rel="noopener noreferrer"
             target="_blank"
             className={classes.github}>
-            <FontAwesomeIcon className={classes.icon} icon={faGithubSquare} size="3x" />
+            <FontAwesomeIcon className={classes.icon} icon={faGithubSquare} size={iconSize} />
           </a>
         </li>
 
-        <li className={classes.socialLinkItem}>
+        <li className={iconCss}>
           <a
             href={accounts[1].url}
             rel="noopener noreferrer"
             target="_blank"
             className={classes.twitter}>
-            <FontAwesomeIcon className={classes.icon} icon={faTwitter} size="3x" />
+            <FontAwesomeIcon className={classes.icon} icon={faTwitter} size={iconSize} />
           </a>
         </li>
 
-        <li className={classes.socialLinkItem}>
+        <li className={iconCss}>
           <a
             href={accounts[2].url}
             rel="noopener noreferrer"
             target="_blank"
             className={classes.instagram}>
-            <FontAwesomeIcon className={classes.icon} icon={faInstagram} size="3x" />
+            <FontAwesomeIcon className={classes.icon} icon={faInstagram} size={iconSize} />
           </a>
         </li>
 
-        <li className={classes.socialLinkItem}>
+        <li className={iconCss}>
           <a
             href={accounts[3].url}
             rel="noopener noreferrer"
             target="_blank"
             className={classes.discord}>
-            <FontAwesomeIcon className={classes.icon} icon={faDiscord} size="3x" />
+            <FontAwesomeIcon className={classes.icon} icon={faDiscord} size={iconSize} />
           </a>
         </li>
-      </ul>
-    </div>
+      </Toolbar>
+    </AppBar>
   );
 };

@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     background: COLORS.navBar,
     minHeight: '10vh',
     [theme.breakpoints.down('sm')]: {
-      minHeight: '15vh'
+      minHeight: '18vh'
     }
   }
 }));
