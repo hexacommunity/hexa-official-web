@@ -3,7 +3,7 @@
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -b prod -d dist"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
