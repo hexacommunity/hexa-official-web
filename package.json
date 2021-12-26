@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "parcel index.html --open",
+    "predeploy": "npm build",
     "deploy": "gh-pages -b master -d build"
   },
   "dependencies": {
