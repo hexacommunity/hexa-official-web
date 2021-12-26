@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,UAEE,QACF,CAEA,KACE,gBACF","file":"hexa-official-web.101c1da7.css","sourceRoot":"..","sourcesContent":["html,\nbody {\n  margin: 0;\n}\n\nbody {\n  min-height: 100vh;\n}\n"]}
