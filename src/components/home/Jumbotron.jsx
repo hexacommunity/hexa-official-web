@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
-    textAlign: 'center',
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -22,12 +21,10 @@ const useStyles = makeStyles((theme) => ({
     width: '500px'
   },
   intro: {
-    marginTop: '4vh',
-    textAlign: 'center'
+    marginTop: '4vh'
   },
   mobileIntro: {
     marginTop: '6vh',
-    textAlign: 'center',
     fontSize: '36px'
   }
 }));
