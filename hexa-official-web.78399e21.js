@@ -86169,26 +86169,7 @@ Object.keys(_Zoom).forEach(function (key) {
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./colors":"node_modules/@material-ui/core/esm/colors/index.js","./styles":"node_modules/@material-ui/core/esm/styles/index.js","./utils":"node_modules/@material-ui/core/esm/utils/index.js","./Accordion":"node_modules/@material-ui/core/esm/Accordion/index.js","./AccordionActions":"node_modules/@material-ui/core/esm/AccordionActions/index.js","./AccordionDetails":"node_modules/@material-ui/core/esm/AccordionDetails/index.js","./AccordionSummary":"node_modules/@material-ui/core/esm/AccordionSummary/index.js","./AppBar":"node_modules/@material-ui/core/esm/AppBar/index.js","./Avatar":"node_modules/@material-ui/core/esm/Avatar/index.js","./Backdrop":"node_modules/@material-ui/core/esm/Backdrop/index.js","./Badge":"node_modules/@material-ui/core/esm/Badge/index.js","./BottomNavigation":"node_modules/@material-ui/core/esm/BottomNavigation/index.js","./BottomNavigationAction":"node_modules/@material-ui/core/esm/BottomNavigationAction/index.js","./Box":"node_modules/@material-ui/core/esm/Box/index.js","./Breadcrumbs":"node_modules/@material-ui/core/esm/Breadcrumbs/index.js","./Button":"node_modules/@material-ui/core/esm/Button/index.js","./ButtonBase":"node_modules/@material-ui/core/esm/ButtonBase/index.js","./ButtonGroup":"node_modules/@material-ui/core/esm/ButtonGroup/index.js","./Card":"node_modules/@material-ui/core/esm/Card/index.js","./CardActionArea":"node_modules/@material-ui/core/esm/CardActionArea/index.js","./CardActions":"node_modules/@material-ui/core/esm/CardActions/index.js","./CardContent":"node_modules/@material-ui/core/esm/CardContent/index.js","./CardHeader":"node_modules/@material-ui/core/esm/CardHeader/index.js","./CardMedia":"node_modules/@material-ui/core/esm/CardMedia/index.js","./Checkbox":"node_modules/@material-ui/core/esm/Checkbox/index.js","./Chip":"node_modules/@material-ui/core/esm/Chip/index.js","./CircularProgress":"node_modules/@material-ui/core/esm/CircularProgress/index.js","./ClickAwayListener":"node_modules/@material-ui/core/esm/ClickAwayListener/index.js","./Collapse":"node_modules/@material-ui/core/esm/Collapse/index.js","./Container":"node_modules/@material-ui/core/esm/Container/index.js","./CssBaseline":"node_modules/@material-ui/core/esm/CssBaseline/index.js","./Dialog":"node_modules/@material-ui/core/esm/Dialog/index.js","./DialogActions":"node_modules/@material-ui/core/esm/DialogActions/index.js","./DialogContent":"node_modules/@material-ui/core/esm/DialogContent/index.js","./DialogContentText":"node_modules/@material-ui/core/esm/DialogContentText/index.js","./DialogTitle":"node_modules/@material-ui/core/esm/DialogTitle/index.js","./Divider":"node_modules/@material-ui/core/esm/Divider/index.js","./Drawer":"node_modules/@material-ui/core/esm/Drawer/index.js","./ExpansionPanel":"node_modules/@material-ui/core/esm/ExpansionPanel/index.js","./ExpansionPanelActions":"node_modules/@material-ui/core/esm/ExpansionPanelActions/index.js","./ExpansionPanelDetails":"node_modules/@material-ui/core/esm/ExpansionPanelDetails/index.js","./ExpansionPanelSummary":"node_modules/@material-ui/core/esm/ExpansionPanelSummary/index.js","./Fab":"node_modules/@material-ui/core/esm/Fab/index.js","./Fade":"node_modules/@material-ui/core/esm/Fade/index.js","./FilledInput":"node_modules/@material-ui/core/esm/FilledInput/index.js","./FormControl":"node_modules/@material-ui/core/esm/FormControl/index.js","./FormControlLabel":"node_modules/@material-ui/core/esm/FormControlLabel/index.js","./FormGroup":"node_modules/@material-ui/core/esm/FormGroup/index.js","./FormHelperText":"node_modules/@material-ui/core/esm/FormHelperText/index.js","./FormLabel":"node_modules/@material-ui/core/esm/FormLabel/index.js","./Grid":"node_modules/@material-ui/core/esm/Grid/index.js","./GridList":"node_modules/@material-ui/core/esm/GridList/index.js","./GridListTile":"node_modules/@material-ui/core/esm/GridListTile/index.js","./GridListTileBar":"node_modules/@material-ui/core/esm/GridListTileBar/index.js","./Grow":"node_modules/@material-ui/core/esm/Grow/index.js","./Hidden":"node_modules/@material-ui/core/esm/Hidden/index.js","./Icon":"node_modules/@material-ui/core/esm/Icon/index.js","./IconButton":"node_modules/@material-ui/core/esm/IconButton/index.js","./ImageList":"node_modules/@material-ui/core/esm/ImageList/index.js","./ImageListItem":"node_modules/@material-ui/core/esm/ImageListItem/index.js","./ImageListItemBar":"node_modules/@material-ui/core/esm/ImageListItemBar/index.js","./Input":"node_modules/@material-ui/core/esm/Input/index.js","./InputAdornment":"node_modules/@material-ui/core/esm/InputAdornment/index.js","./InputBase":"node_modules/@material-ui/core/esm/InputBase/index.js","./InputLabel":"node_modules/@material-ui/core/esm/InputLabel/index.js","./LinearProgress":"node_modules/@material-ui/core/esm/LinearProgress/index.js","./Link":"node_modules/@material-ui/core/esm/Link/index.js","./List":"node_modules/@material-ui/core/esm/List/index.js","./ListItem":"node_modules/@material-ui/core/esm/ListItem/index.js","./ListItemAvatar":"node_modules/@material-ui/core/esm/ListItemAvatar/index.js","./ListItemIcon":"node_modules/@material-ui/core/esm/ListItemIcon/index.js","./ListItemSecondaryAction":"node_modules/@material-ui/core/esm/ListItemSecondaryAction/index.js","./ListItemText":"node_modules/@material-ui/core/esm/ListItemText/index.js","./ListSubheader":"node_modules/@material-ui/core/esm/ListSubheader/index.js","./Menu":"node_modules/@material-ui/core/esm/Menu/index.js","./MenuItem":"node_modules/@material-ui/core/esm/MenuItem/index.js","./MenuList":"node_modules/@material-ui/core/esm/MenuList/index.js","./MobileStepper":"node_modules/@material-ui/core/esm/MobileStepper/index.js","./Modal":"node_modules/@material-ui/core/esm/Modal/index.js","./NativeSelect":"node_modules/@material-ui/core/esm/NativeSelect/index.js","./NoSsr":"node_modules/@material-ui/core/esm/NoSsr/index.js","./OutlinedInput":"node_modules/@material-ui/core/esm/OutlinedInput/index.js","./Paper":"node_modules/@material-ui/core/esm/Paper/index.js","./Popover":"node_modules/@material-ui/core/esm/Popover/index.js","./Popper":"node_modules/@material-ui/core/esm/Popper/index.js","./Portal":"node_modules/@material-ui/core/esm/Portal/index.js","./Radio":"node_modules/@material-ui/core/esm/Radio/index.js","./RadioGroup":"node_modules/@material-ui/core/esm/RadioGroup/index.js","./RootRef":"node_modules/@material-ui/core/esm/RootRef/index.js","./Select":"node_modules/@material-ui/core/esm/Select/index.js","./Slide":"node_modules/@material-ui/core/esm/Slide/index.js","./Slider":"node_modules/@material-ui/core/esm/Slider/index.js","./Snackbar":"node_modules/@material-ui/core/esm/Snackbar/index.js","./SnackbarContent":"node_modules/@material-ui/core/esm/SnackbarContent/index.js","./Step":"node_modules/@material-ui/core/esm/Step/index.js","./StepButton":"node_modules/@material-ui/core/esm/StepButton/index.js","./StepConnector":"node_modules/@material-ui/core/esm/StepConnector/index.js","./StepContent":"node_modules/@material-ui/core/esm/StepContent/index.js","./StepIcon":"node_modules/@material-ui/core/esm/StepIcon/index.js","./StepLabel":"node_modules/@material-ui/core/esm/StepLabel/index.js","./Stepper":"node_modules/@material-ui/core/esm/Stepper/index.js","./SvgIcon":"node_modules/@material-ui/core/esm/SvgIcon/index.js","./SwipeableDrawer":"node_modules/@material-ui/core/esm/SwipeableDrawer/index.js","./Switch":"node_modules/@material-ui/core/esm/Switch/index.js","./Tab":"node_modules/@material-ui/core/esm/Tab/index.js","./Table":"node_modules/@material-ui/core/esm/Table/index.js","./TableBody":"node_modules/@material-ui/core/esm/TableBody/index.js","./TableCell":"node_modules/@material-ui/core/esm/TableCell/index.js","./TableContainer":"node_modules/@material-ui/core/esm/TableContainer/index.js","./TableFooter":"node_modules/@material-ui/core/esm/TableFooter/index.js","./TableHead":"node_modules/@material-ui/core/esm/TableHead/index.js","./TablePagination":"node_modules/@material-ui/core/esm/TablePagination/index.js","./TableRow":"node_modules/@material-ui/core/esm/TableRow/index.js","./TableSortLabel":"node_modules/@material-ui/core/esm/TableSortLabel/index.js","./Tabs":"node_modules/@material-ui/core/esm/Tabs/index.js","./TabScrollButton":"node_modules/@material-ui/core/esm/TabScrollButton/index.js","./TextField":"node_modules/@material-ui/core/esm/TextField/index.js","./TextareaAutosize":"node_modules/@material-ui/core/esm/TextareaAutosize/index.js","./Toolbar":"node_modules/@material-ui/core/esm/Toolbar/index.js","./Tooltip":"node_modules/@material-ui/core/esm/Tooltip/index.js","./Typography":"node_modules/@material-ui/core/esm/Typography/index.js","./Unstable_TrapFocus":"node_modules/@material-ui/core/esm/Unstable_TrapFocus/index.js","./useMediaQuery":"node_modules/@material-ui/core/esm/useMediaQuery/index.js","./useScrollTrigger":"node_modules/@material-ui/core/esm/useScrollTrigger/index.js","./withMobileDialog":"node_modules/@material-ui/core/esm/withMobileDialog/index.js","./withWidth":"node_modules/@material-ui/core/esm/withWidth/index.js","./Zoom":"node_modules/@material-ui/core/esm/Zoom/index.js"}],"src/styles/variables/colors.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.SOCIAL_MEDIA_COLORS = exports.COLORS = void 0;
-var COLORS = {
-  navBar: '#030E12',
-  backgroundColor: '#fff'
-};
-exports.COLORS = COLORS;
-var SOCIAL_MEDIA_COLORS = {
-  github: '#812290',
-  twitter: '#32aae2',
-  instagram: '#d6249f',
-  discord: '#8496DC'
-};
-exports.SOCIAL_MEDIA_COLORS = SOCIAL_MEDIA_COLORS;
-},{}],"node_modules/ua-parser-js/dist/ua-parser.min.js":[function(require,module,exports) {
+},{"./colors":"node_modules/@material-ui/core/esm/colors/index.js","./styles":"node_modules/@material-ui/core/esm/styles/index.js","./utils":"node_modules/@material-ui/core/esm/utils/index.js","./Accordion":"node_modules/@material-ui/core/esm/Accordion/index.js","./AccordionActions":"node_modules/@material-ui/core/esm/AccordionActions/index.js","./AccordionDetails":"node_modules/@material-ui/core/esm/AccordionDetails/index.js","./AccordionSummary":"node_modules/@material-ui/core/esm/AccordionSummary/index.js","./AppBar":"node_modules/@material-ui/core/esm/AppBar/index.js","./Avatar":"node_modules/@material-ui/core/esm/Avatar/index.js","./Backdrop":"node_modules/@material-ui/core/esm/Backdrop/index.js","./Badge":"node_modules/@material-ui/core/esm/Badge/index.js","./BottomNavigation":"node_modules/@material-ui/core/esm/BottomNavigation/index.js","./BottomNavigationAction":"node_modules/@material-ui/core/esm/BottomNavigationAction/index.js","./Box":"node_modules/@material-ui/core/esm/Box/index.js","./Breadcrumbs":"node_modules/@material-ui/core/esm/Breadcrumbs/index.js","./Button":"node_modules/@material-ui/core/esm/Button/index.js","./ButtonBase":"node_modules/@material-ui/core/esm/ButtonBase/index.js","./ButtonGroup":"node_modules/@material-ui/core/esm/ButtonGroup/index.js","./Card":"node_modules/@material-ui/core/esm/Card/index.js","./CardActionArea":"node_modules/@material-ui/core/esm/CardActionArea/index.js","./CardActions":"node_modules/@material-ui/core/esm/CardActions/index.js","./CardContent":"node_modules/@material-ui/core/esm/CardContent/index.js","./CardHeader":"node_modules/@material-ui/core/esm/CardHeader/index.js","./CardMedia":"node_modules/@material-ui/core/esm/CardMedia/index.js","./Checkbox":"node_modules/@material-ui/core/esm/Checkbox/index.js","./Chip":"node_modules/@material-ui/core/esm/Chip/index.js","./CircularProgress":"node_modules/@material-ui/core/esm/CircularProgress/index.js","./ClickAwayListener":"node_modules/@material-ui/core/esm/ClickAwayListener/index.js","./Collapse":"node_modules/@material-ui/core/esm/Collapse/index.js","./Container":"node_modules/@material-ui/core/esm/Container/index.js","./CssBaseline":"node_modules/@material-ui/core/esm/CssBaseline/index.js","./Dialog":"node_modules/@material-ui/core/esm/Dialog/index.js","./DialogActions":"node_modules/@material-ui/core/esm/DialogActions/index.js","./DialogContent":"node_modules/@material-ui/core/esm/DialogContent/index.js","./DialogContentText":"node_modules/@material-ui/core/esm/DialogContentText/index.js","./DialogTitle":"node_modules/@material-ui/core/esm/DialogTitle/index.js","./Divider":"node_modules/@material-ui/core/esm/Divider/index.js","./Drawer":"node_modules/@material-ui/core/esm/Drawer/index.js","./ExpansionPanel":"node_modules/@material-ui/core/esm/ExpansionPanel/index.js","./ExpansionPanelActions":"node_modules/@material-ui/core/esm/ExpansionPanelActions/index.js","./ExpansionPanelDetails":"node_modules/@material-ui/core/esm/ExpansionPanelDetails/index.js","./ExpansionPanelSummary":"node_modules/@material-ui/core/esm/ExpansionPanelSummary/index.js","./Fab":"node_modules/@material-ui/core/esm/Fab/index.js","./Fade":"node_modules/@material-ui/core/esm/Fade/index.js","./FilledInput":"node_modules/@material-ui/core/esm/FilledInput/index.js","./FormControl":"node_modules/@material-ui/core/esm/FormControl/index.js","./FormControlLabel":"node_modules/@material-ui/core/esm/FormControlLabel/index.js","./FormGroup":"node_modules/@material-ui/core/esm/FormGroup/index.js","./FormHelperText":"node_modules/@material-ui/core/esm/FormHelperText/index.js","./FormLabel":"node_modules/@material-ui/core/esm/FormLabel/index.js","./Grid":"node_modules/@material-ui/core/esm/Grid/index.js","./GridList":"node_modules/@material-ui/core/esm/GridList/index.js","./GridListTile":"node_modules/@material-ui/core/esm/GridListTile/index.js","./GridListTileBar":"node_modules/@material-ui/core/esm/GridListTileBar/index.js","./Grow":"node_modules/@material-ui/core/esm/Grow/index.js","./Hidden":"node_modules/@material-ui/core/esm/Hidden/index.js","./Icon":"node_modules/@material-ui/core/esm/Icon/index.js","./IconButton":"node_modules/@material-ui/core/esm/IconButton/index.js","./ImageList":"node_modules/@material-ui/core/esm/ImageList/index.js","./ImageListItem":"node_modules/@material-ui/core/esm/ImageListItem/index.js","./ImageListItemBar":"node_modules/@material-ui/core/esm/ImageListItemBar/index.js","./Input":"node_modules/@material-ui/core/esm/Input/index.js","./InputAdornment":"node_modules/@material-ui/core/esm/InputAdornment/index.js","./InputBase":"node_modules/@material-ui/core/esm/InputBase/index.js","./InputLabel":"node_modules/@material-ui/core/esm/InputLabel/index.js","./LinearProgress":"node_modules/@material-ui/core/esm/LinearProgress/index.js","./Link":"node_modules/@material-ui/core/esm/Link/index.js","./List":"node_modules/@material-ui/core/esm/List/index.js","./ListItem":"node_modules/@material-ui/core/esm/ListItem/index.js","./ListItemAvatar":"node_modules/@material-ui/core/esm/ListItemAvatar/index.js","./ListItemIcon":"node_modules/@material-ui/core/esm/ListItemIcon/index.js","./ListItemSecondaryAction":"node_modules/@material-ui/core/esm/ListItemSecondaryAction/index.js","./ListItemText":"node_modules/@material-ui/core/esm/ListItemText/index.js","./ListSubheader":"node_modules/@material-ui/core/esm/ListSubheader/index.js","./Menu":"node_modules/@material-ui/core/esm/Menu/index.js","./MenuItem":"node_modules/@material-ui/core/esm/MenuItem/index.js","./MenuList":"node_modules/@material-ui/core/esm/MenuList/index.js","./MobileStepper":"node_modules/@material-ui/core/esm/MobileStepper/index.js","./Modal":"node_modules/@material-ui/core/esm/Modal/index.js","./NativeSelect":"node_modules/@material-ui/core/esm/NativeSelect/index.js","./NoSsr":"node_modules/@material-ui/core/esm/NoSsr/index.js","./OutlinedInput":"node_modules/@material-ui/core/esm/OutlinedInput/index.js","./Paper":"node_modules/@material-ui/core/esm/Paper/index.js","./Popover":"node_modules/@material-ui/core/esm/Popover/index.js","./Popper":"node_modules/@material-ui/core/esm/Popper/index.js","./Portal":"node_modules/@material-ui/core/esm/Portal/index.js","./Radio":"node_modules/@material-ui/core/esm/Radio/index.js","./RadioGroup":"node_modules/@material-ui/core/esm/RadioGroup/index.js","./RootRef":"node_modules/@material-ui/core/esm/RootRef/index.js","./Select":"node_modules/@material-ui/core/esm/Select/index.js","./Slide":"node_modules/@material-ui/core/esm/Slide/index.js","./Slider":"node_modules/@material-ui/core/esm/Slider/index.js","./Snackbar":"node_modules/@material-ui/core/esm/Snackbar/index.js","./SnackbarContent":"node_modules/@material-ui/core/esm/SnackbarContent/index.js","./Step":"node_modules/@material-ui/core/esm/Step/index.js","./StepButton":"node_modules/@material-ui/core/esm/StepButton/index.js","./StepConnector":"node_modules/@material-ui/core/esm/StepConnector/index.js","./StepContent":"node_modules/@material-ui/core/esm/StepContent/index.js","./StepIcon":"node_modules/@material-ui/core/esm/StepIcon/index.js","./StepLabel":"node_modules/@material-ui/core/esm/StepLabel/index.js","./Stepper":"node_modules/@material-ui/core/esm/Stepper/index.js","./SvgIcon":"node_modules/@material-ui/core/esm/SvgIcon/index.js","./SwipeableDrawer":"node_modules/@material-ui/core/esm/SwipeableDrawer/index.js","./Switch":"node_modules/@material-ui/core/esm/Switch/index.js","./Tab":"node_modules/@material-ui/core/esm/Tab/index.js","./Table":"node_modules/@material-ui/core/esm/Table/index.js","./TableBody":"node_modules/@material-ui/core/esm/TableBody/index.js","./TableCell":"node_modules/@material-ui/core/esm/TableCell/index.js","./TableContainer":"node_modules/@material-ui/core/esm/TableContainer/index.js","./TableFooter":"node_modules/@material-ui/core/esm/TableFooter/index.js","./TableHead":"node_modules/@material-ui/core/esm/TableHead/index.js","./TablePagination":"node_modules/@material-ui/core/esm/TablePagination/index.js","./TableRow":"node_modules/@material-ui/core/esm/TableRow/index.js","./TableSortLabel":"node_modules/@material-ui/core/esm/TableSortLabel/index.js","./Tabs":"node_modules/@material-ui/core/esm/Tabs/index.js","./TabScrollButton":"node_modules/@material-ui/core/esm/TabScrollButton/index.js","./TextField":"node_modules/@material-ui/core/esm/TextField/index.js","./TextareaAutosize":"node_modules/@material-ui/core/esm/TextareaAutosize/index.js","./Toolbar":"node_modules/@material-ui/core/esm/Toolbar/index.js","./Tooltip":"node_modules/@material-ui/core/esm/Tooltip/index.js","./Typography":"node_modules/@material-ui/core/esm/Typography/index.js","./Unstable_TrapFocus":"node_modules/@material-ui/core/esm/Unstable_TrapFocus/index.js","./useMediaQuery":"node_modules/@material-ui/core/esm/useMediaQuery/index.js","./useScrollTrigger":"node_modules/@material-ui/core/esm/useScrollTrigger/index.js","./withMobileDialog":"node_modules/@material-ui/core/esm/withMobileDialog/index.js","./withWidth":"node_modules/@material-ui/core/esm/withWidth/index.js","./Zoom":"node_modules/@material-ui/core/esm/Zoom/index.js"}],"node_modules/ua-parser-js/dist/ua-parser.min.js":[function(require,module,exports) {
 var define;
 /* UAParser.js v0.7.31
    Copyright © 2012-2021 Faisal Salman <f@faisalman.com>
@@ -87281,110 +87262,26 @@ exports.useDeviceSelectors = useDeviceSelectors;
 exports.useMobileOrientation = useMobileOrientation;
 exports.withOrientationChange = withOrientationChange;
 
-},{"react":"node_modules/react/index.js","ua-parser-js/dist/ua-parser.min":"node_modules/ua-parser-js/dist/ua-parser.min.js"}],"src/styles/images/logo_white.png":[function(require,module,exports) {
-module.exports = "/logo_white.39339d75.png";
-},{}],"src/components/common/Logo.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","ua-parser-js/dist/ua-parser.min":"node_modules/ua-parser-js/dist/ua-parser.min.js"}],"src/styles/variables/colors.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Logo = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _core = require("@material-ui/core");
-
-var _reactDeviceDetect = require("react-device-detect");
-
-var _reactRouterDom = require("react-router-dom");
-
-var _logo_white = _interopRequireDefault(require("../../styles/images/logo_white.png"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var useStyles = (0, _core.makeStyles)(function (theme) {
-  return {
-    logoContainer: {
-      width: 'auto'
-    },
-    logoLink: {
-      display: 'flex',
-      alignItems: 'center',
-      color: '#000',
-      '&:focus, &:hover, &:visited, &:link, &:active': {
-        textDecoration: 'none'
-      }
-    }
-  };
-});
-
-var Logo = function Logo() {
-  var classes = useStyles();
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: classes.logoContainer
-  }, _reactDeviceDetect.isMobile ? /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    className: classes.logoLink,
-    to: "/"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _logo_white.default,
-    alt: "logo",
-    height: "80px"
-  })) : /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    className: classes.logoLink,
-    to: "/"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _logo_white.default,
-    alt: "logo",
-    height: "48px"
-  })));
+exports.SOCIAL_MEDIA_COLORS = exports.COLORS = void 0;
+var COLORS = {
+  navBar: '#030E12',
+  backgroundColor: '#fff'
 };
-
-exports.Logo = Logo;
-},{"react":"node_modules/react/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","react-router-dom":"node_modules/react-router-dom/index.js","../../styles/images/logo_white.png":"src/styles/images/logo_white.png"}],"src/components/common/Navbar.jsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Navbar = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _styles = require("@material-ui/core/styles");
-
-var _core = require("@material-ui/core/");
-
-var _colors = require("../../styles/variables/colors");
-
-var _Logo = require("./Logo");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var useStyles = (0, _styles.makeStyles)(function (theme) {
-  return {
-    navbarContainer: _defineProperty({
-      background: _colors.COLORS.navBar,
-      minHeight: '10vh'
-    }, theme.breakpoints.down('sm'), {
-      minHeight: '18vh'
-    })
-  };
-});
-
-var Navbar = function Navbar() {
-  var classes = useStyles();
-  return /*#__PURE__*/_react.default.createElement(_core.AppBar, {
-    position: "static"
-  }, /*#__PURE__*/_react.default.createElement(_core.Toolbar, {
-    className: classes.navbarContainer
-  }, /*#__PURE__*/_react.default.createElement(_Logo.Logo, null)));
+exports.COLORS = COLORS;
+var SOCIAL_MEDIA_COLORS = {
+  github: '#812290',
+  twitter: '#32aae2',
+  instagram: '#d6249f',
+  discord: '#8496DC'
 };
-
-exports.Navbar = Navbar;
-},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/":"node_modules/@material-ui/core/esm/index.js","../../styles/variables/colors":"src/styles/variables/colors.js","./Logo":"src/components/common/Logo.jsx"}],"node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
+exports.SOCIAL_MEDIA_COLORS = SOCIAL_MEDIA_COLORS;
+},{}],"node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
@@ -93742,7 +93639,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
     jumbotronContainer: {
+      display: 'flex',
+      flexDirection: 'column',
       minHeight: '100vh',
+      textAlign: 'center',
       alignItems: 'center',
       justifyContent: 'center'
     },
@@ -93768,11 +93668,8 @@ var Jumbotron = function Jumbotron() {
   var classes = useStyles();
   var bannerCss = _reactDeviceDetect.isMobile ? classes.mobileBannerImage : classes.bannerImage;
   var introCss = _reactDeviceDetect.isMobile ? classes.mobileIntro : classes.intro;
-  return /*#__PURE__*/_react.default.createElement(_core.Grid, {
-    className: classes.jumbotronContainer,
-    container: true,
-    spacing: 0,
-    direction: "column"
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: classes.jumbotronContainer
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: _logo_black.default,
     alt: "hexa-official-icon",
@@ -93833,7 +93730,110 @@ var Home = function Home() {
 };
 
 exports.Home = Home;
-},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","../components/home/SocialAccountsBar":"src/components/home/SocialAccountsBar.jsx","../components/home/Jumbotron":"src/components/home/Jumbotron.jsx"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","../components/home/SocialAccountsBar":"src/components/home/SocialAccountsBar.jsx","../components/home/Jumbotron":"src/components/home/Jumbotron.jsx"}],"src/styles/images/logo_white.png":[function(require,module,exports) {
+module.exports = "/logo_white.39339d75.png";
+},{}],"src/components/common/Logo.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Logo = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _core = require("@material-ui/core");
+
+var _reactDeviceDetect = require("react-device-detect");
+
+var _reactRouterDom = require("react-router-dom");
+
+var _logo_white = _interopRequireDefault(require("../../styles/images/logo_white.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var useStyles = (0, _core.makeStyles)(function (theme) {
+  return {
+    logoContainer: {
+      width: 'auto'
+    },
+    logoLink: {
+      display: 'flex',
+      alignItems: 'center',
+      color: '#000',
+      '&:focus, &:hover, &:visited, &:link, &:active': {
+        textDecoration: 'none'
+      }
+    }
+  };
+});
+
+var Logo = function Logo() {
+  var classes = useStyles();
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: classes.logoContainer
+  }, _reactDeviceDetect.isMobile ? /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: classes.logoLink,
+    to: "/"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _logo_white.default,
+    alt: "logo",
+    height: "80px"
+  })) : /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: classes.logoLink,
+    to: "/"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _logo_white.default,
+    alt: "logo",
+    height: "48px"
+  })));
+};
+
+exports.Logo = Logo;
+},{"react":"node_modules/react/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","react-router-dom":"node_modules/react-router-dom/index.js","../../styles/images/logo_white.png":"src/styles/images/logo_white.png"}],"src/components/common/Navbar.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Navbar = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styles = require("@material-ui/core/styles");
+
+var _core = require("@material-ui/core/");
+
+var _colors = require("../../styles/variables/colors");
+
+var _Logo = require("./Logo");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var useStyles = (0, _styles.makeStyles)(function (theme) {
+  return {
+    navbarContainer: _defineProperty({
+      background: _colors.COLORS.navBar,
+      minHeight: '10vh'
+    }, theme.breakpoints.down('sm'), {
+      minHeight: '18vh'
+    })
+  };
+});
+
+var Navbar = function Navbar() {
+  var classes = useStyles();
+  return /*#__PURE__*/_react.default.createElement(_core.AppBar, {
+    position: "fixed"
+  }, /*#__PURE__*/_react.default.createElement(_core.Toolbar, {
+    className: classes.navbarContainer
+  }, /*#__PURE__*/_react.default.createElement(_Logo.Logo, null)));
+};
+
+exports.Navbar = Navbar;
+},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/":"node_modules/@material-ui/core/esm/index.js","../../styles/variables/colors":"src/styles/variables/colors.js","./Logo":"src/components/common/Logo.jsx"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -93917,9 +93917,9 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
-var _Navbar = require("./components/common/Navbar");
-
 var _Home = require("./views/Home");
+
+var _Navbar = require("./components/common/Navbar");
 
 require("./App.css");
 
@@ -93936,7 +93936,7 @@ var routing = /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserR
   path: "/",
   element: /*#__PURE__*/_react.default.createElement(_Home.Home, null)
 })));
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/index.js","./components/common/Navbar":"src/components/common/Navbar.jsx","./views/Home":"src/views/Home.jsx","./App.css":"src/App.css"}],"src/styles/variables/themes.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/index.js","./views/Home":"src/views/Home.jsx","./components/common/Navbar":"src/components/common/Navbar.jsx","./App.css":"src/App.css"}],"src/styles/variables/themes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
