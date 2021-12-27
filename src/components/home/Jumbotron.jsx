@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Typography } from '@material-ui/core/';
+import { Typography } from '@material-ui/core/';
 import { isMobile } from 'react-device-detect';
 import { JoinFormButton } from './JoinFormButton';
 import about from '../../constants/about.json';
@@ -8,7 +8,10 @@ import hexaLogo from '../../styles/images/logo_black.png';
 
 const useStyles = makeStyles((theme) => ({
   jumbotronContainer: {
+    display: 'flex',
+    flexDirection: 'column',
     minHeight: '100vh',
+    textAlign: 'center',
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -34,12 +37,12 @@ export const Jumbotron = () => {
   let bannerCss = isMobile ? classes.mobileBannerImage : classes.bannerImage;
   let introCss = isMobile ? classes.mobileIntro : classes.intro;
   return (
-    <Grid className={classes.jumbotronContainer} container spacing={0} direction="column">
+    <div className={classes.jumbotronContainer}>
       <img src={hexaLogo} alt="hexa-official-icon" className={bannerCss} />
       <Typography variant="h6" className={introCss}>
         {about.intro}
       </Typography>
       <JoinFormButton />
-    </Grid>
+    </div>
   );
 };

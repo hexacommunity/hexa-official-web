@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 export const Navbar = () => {
   const classes = useStyles();
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Toolbar className={classes.navbarContainer}>
         <Logo />
       </Toolbar>
