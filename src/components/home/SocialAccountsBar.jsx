@@ -4,12 +4,7 @@ import { AppBar, Toolbar } from '@material-ui/core/';
 import { isMobile } from 'react-device-detect';
 import { COLORS, SOCIAL_MEDIA_COLORS } from '../../styles/variables/colors';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faGithubSquare,
-  faTwitter,
-  faInstagram,
-  faDiscord
-} from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import socialMedia from '../../constants/socialMediaAccounts.json';
 
 const useStyles = makeStyles((theme) => ({
@@ -65,55 +60,56 @@ const useStyles = makeStyles((theme) => ({
 
 export const SocialAccountsBar = () => {
   const classes = useStyles();
-  let iconSize = '3x';
+
   let iconCss = isMobile ? classes.mobilLinkItem : classes.socialLinkItem;
+  let iconSize = '3x';
+
   if (isMobile) {
     iconSize = '6x';
   }
   const accounts = socialMedia.accounts;
+
   return (
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar className={classes.socialAccountsBar}>
-        <li className={iconCss}>
-          <a
-            href={accounts[0].url}
-            rel="noopener noreferrer"
-            target="_blank"
-            className={classes.github}>
-            <FontAwesomeIcon className={classes.icon} icon={faGithubSquare} size={iconSize} />
-          </a>
-        </li>
-
-        <li className={iconCss}>
-          <a
-            href={accounts[1].url}
-            rel="noopener noreferrer"
-            target="_blank"
-            className={classes.twitter}>
-            <FontAwesomeIcon className={classes.icon} icon={faTwitter} size={iconSize} />
-          </a>
-        </li>
-
-        <li className={iconCss}>
-          <a
-            href={accounts[2].url}
-            rel="noopener noreferrer"
-            target="_blank"
-            className={classes.instagram}>
-            <FontAwesomeIcon className={classes.icon} icon={faInstagram} size={iconSize} />
-          </a>
-        </li>
-
-        <li className={iconCss}>
-          <a
-            href={accounts[3].url}
-            rel="noopener noreferrer"
-            target="_blank"
-            className={classes.discord}>
-            <FontAwesomeIcon className={classes.icon} icon={faDiscord} size={iconSize} />
-          </a>
-        </li>
+        {renderSocialMediaIcons({ classes, accounts, iconCss, iconSize })}
       </Toolbar>
     </AppBar>
+  );
+};
+
+const renderSocialMediaIcons = ({ classes, accounts, iconCss, iconSize }) => {
+  return (
+    <>
+      <li className={iconCss}>
+        <a
+          href={accounts[0].url}
+          rel="noopener noreferrer"
+          target="_blank"
+          className={classes.github}>
+          <FontAwesomeIcon className={classes.icon} icon={faGithubSquare} size={iconSize} />
+        </a>
+      </li>
+
+      <li className={iconCss}>
+        <a
+          href={accounts[1].url}
+          rel="noopener noreferrer"
+          target="_blank"
+          className={classes.twitter}>
+          <FontAwesomeIcon className={classes.icon} icon={faTwitter} size={iconSize} />
+        </a>
+      </li>
+
+      <li className={iconCss}>
+        <a
+          href={accounts[2].url}
+          rel="noopener noreferrer"
+          target="_blank"
+          className={classes.instagram}>
+          <FontAwesomeIcon className={classes.icon} icon={faInstagram} size={iconSize} />
+        </a>
+      </li>
+    </>
   );
 };
