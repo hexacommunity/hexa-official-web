@@ -1,1 +1,0 @@
-{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA;;EAEE,SAAS;AACX;;AAEA;EACE,sBAAsB;EACtB,oFAAkF;AACpF","file":"hexa-official-web.78399e21.css","sourceRoot":"..","sourcesContent":["html,\nbody {\n  margin: 0;\n}\n\n@font-face {\n  font-family: 'Poppins';\n  src: local('Poppins'), url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');\n}\n"]}
