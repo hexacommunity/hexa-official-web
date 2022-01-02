@@ -17,10 +17,14 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     listStyle: 'none',
-    minHeight: '60px',
-    [theme.breakpoints.down('sm')]: {
-      minHeight: '96px'
-    }
+    minHeight: '60px'
+  },
+  mobileSocialAccountsBar: {
+    background: COLORS.navBar,
+    display: 'flex',
+    justifyContent: 'center',
+    listStyle: 'none',
+    minHeight: '96px'
   },
   socialLinkItem: {
     transition: 'transform 250ms',
@@ -57,13 +61,14 @@ export const SocialAccountsBar = () => {
   const classes = useStyles();
 
   let iconCss = isMobile ? classes.mobilLinkItem : classes.socialLinkItem;
-  let iconSize = isMobile ? '4x' : '2x';
+  let iconSize = isMobile ? '5x' : '2x';
+  let barCss = isMobile ? classes.mobileSocialAccountsBar : classes.socialAccountsBar;
 
   const accounts = hexa.accounts;
 
   return (
     <AppBar position="fixed" className={classes.appBar}>
-      <Toolbar className={classes.socialAccountsBar}>
+      <Toolbar className={barCss}>
         {renderSocialMediaIcons({ classes, accounts, iconCss, iconSize })}
       </Toolbar>
     </AppBar>

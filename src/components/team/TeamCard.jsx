@@ -22,7 +22,10 @@ const useStyles = makeStyles((theme) => ({
     objectFit: 'cover'
   },
   content: {
-    textAlign: 'center'
+    textAlign: 'center',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '20px'
+    }
   },
   socialMediaPanel: {
     width: '100%',

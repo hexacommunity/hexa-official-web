@@ -15,13 +15,16 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center'
   },
   bannerImage: {
-    width: '400px'
-  },
-  mobileBannerImage: {
-    width: '500px'
+    width: '350px',
+    [theme.breakpoints.down('sm')]: {
+      width: '200px'
+    }
   },
   intro: {
-    marginTop: '4vh'
+    marginTop: '4vh',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '14px'
+    }
   },
   mobileIntro: {
     marginTop: '6vh',
@@ -31,11 +34,10 @@ const useStyles = makeStyles((theme) => ({
 
 export const Jumbotron = () => {
   const classes = useStyles();
-  let bannerCss = isMobile ? classes.mobileBannerImage : classes.bannerImage;
   let introCss = isMobile ? classes.mobileIntro : classes.intro;
   return (
     <div className={classes.jumbotronContainer}>
-      <img src={hexaLogo} alt="hexa-official-icon" className={bannerCss} />
+      <img src={hexaLogo} alt="hexa-official-icon" className={classes.bannerImage} />
       <Typography variant="h6" className={introCss}>
         {home.intro}
       </Typography>

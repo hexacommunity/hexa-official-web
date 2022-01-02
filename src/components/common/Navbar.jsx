@@ -6,7 +6,7 @@ import { Logo } from './navbar/Logo';
 
 const useStyles = makeStyles((theme) => ({
   navbarContainer: {
-    background: COLORS.navBar,
+    backgroundColor: COLORS.navBar,
     minHeight: '60px',
     [theme.breakpoints.down('sm')]: {
       minHeight: '96px'
@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const Navbar = () => {
   const classes = useStyles();
+
   const links = [
     {
       path: '/team',

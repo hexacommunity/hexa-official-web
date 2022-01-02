@@ -11,9 +11,14 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '13vh'
+    marginTop: '13vh',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '20vh',
+      marginBottom: '15vh'
+    }
   },
   teamMemberCardsPanel: {
+    heigth: '100%',
     alignContent: 'center',
     justifyContent: 'center',
     alignItems: 'center'
@@ -31,10 +36,10 @@ export const TeamMembers = () => {
         Kurucular
       </Typography>
       <Grid container spacing={6} className={classes.teamMemberCardsPanel}>
-        <Grid item xs={12} lg={4}>
+        <Grid item xs={12} md={6} lg={4}>
           <TeamCard person={team[0]} imageSrc={baris_pp} />
         </Grid>
-        <Grid item xs={12} lg={4}>
+        <Grid item xs={12} md={6} lg={4}>
           <TeamCard person={team[1]} imageSrc={kerem_pp} />
         </Grid>
       </Grid>
