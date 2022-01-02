@@ -50,14 +50,11 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 24,
   },
   socialLinkItem: {
-    margin: "0 24px",
+    margin: "0 18px",
     transition: "transform 250ms",
     "&:hover": {
       transform: "translateY(-2px)",
     },
-  },
-  mobilLinkItem: {
-    margin: "0 10px",
   },
   icon: {
     color: "#000",
@@ -89,12 +86,9 @@ export const TeamCard = (props) => {
         image={props.imageSrc}
       />
       <CardContent className={classes.content}>
-        <Typography variant="h5" gutterBottom>
-          {props.person.name}
-        </Typography>
-        <Typography variant="body2" gutterBottom>
-          {props.person.title}
-        </Typography>
+        <Typography variant="h5">{props.person.name}</Typography>
+        <Typography variant="body2">{props.person.title}</Typography>
+        <Typography variant="body2">{props.person.at}</Typography>
       </CardContent>
       <Box className={classes.socialMediaPanel}>
         <Grid container direction="row" className={classes.iconGrid}>

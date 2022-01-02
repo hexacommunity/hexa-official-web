@@ -1,31 +1,31 @@
-import React from 'react';
-import { makeStyles, Container, Grid, Typography } from '@material-ui/core';
-import { TeamCard } from './TeamCard';
-import team from '../../constants/team.json';
-import baris_pp from '../../styles/images/baris_pp.jpeg';
-import kerem_pp from '../../styles/images/kerem_pp.jpeg';
+import React from "react";
+import { makeStyles, Container, Grid, Typography } from "@material-ui/core";
+import { TeamCard } from "./TeamCard";
+import team from "../../constants/team.json";
+import baris_pp from "../../styles/images/baris_pp.jpeg";
+import kerem_pp from "../../styles/images/kerem_pp.jpg";
 
 const useStyles = makeStyles((theme) => ({
   teamMembersContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: '13vh',
-    [theme.breakpoints.down('sm')]: {
-      marginTop: '20vh',
-      marginBottom: '15vh'
-    }
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: "13vh",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "20vh",
+      marginBottom: "15vh",
+    },
   },
   teamMemberCardsPanel: {
-    heigth: '100%',
-    alignContent: 'center',
-    justifyContent: 'center',
-    alignItems: 'center'
+    heigth: "100%",
+    alignContent: "center",
+    justifyContent: "center",
+    alignItems: "center",
   },
   title: {
-    marginBottom: '4vh'
-  }
+    marginBottom: "4vh",
+  },
 }));
 
 export const TeamMembers = () => {
