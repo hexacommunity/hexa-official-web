@@ -1,30 +1,27 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { makeStyles, AppBar, Toolbar } from '@material-ui/core';
-import { COLORS } from '../../styles/variables/colors';
-import { Logo } from './navbar/Logo';
+import React from "react";
+import { Link } from "react-router-dom";
+import { makeStyles, AppBar, Toolbar } from "@material-ui/core";
+import { COLORS } from "../../styles/variables/colors";
+import { Logo } from "./navbar/Logo";
 
 const useStyles = makeStyles((theme) => ({
   navbarContainer: {
     backgroundColor: COLORS.navBar,
-    minHeight: '60px',
-    [theme.breakpoints.down('sm')]: {
-      minHeight: '96px'
-    },
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center'
+    minHeight: "60px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   navLink: {
-    marginLeft: '1.5vw',
-    marginRight: '1.5vw',
-    cursor: 'pointer',
-    textAlign: 'center',
-    color: '#fff',
-    '&:focus, &:hover, &:visited, &:link, &:active': {
-      textDecoration: 'none'
-    }
-  }
+    marginLeft: "1.5vw",
+    marginRight: "1.5vw",
+    cursor: "pointer",
+    textAlign: "center",
+    color: "#fff",
+    "&:focus, &:hover, &:visited, &:link, &:active": {
+      textDecoration: "none",
+    },
+  },
 }));
 
 export const Navbar = () => {
@@ -32,9 +29,9 @@ export const Navbar = () => {
 
   const links = [
     {
-      path: '/team',
-      isProtected: 'false'
-    }
+      path: "/team",
+      isProtected: "false",
+    },
   ];
 
   return (

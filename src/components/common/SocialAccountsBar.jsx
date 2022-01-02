@@ -1,110 +1,113 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar } from '@material-ui/core/';
-import { isMobile } from 'react-device-detect';
-import { COLORS, SOCIAL_MEDIA_COLORS } from '../../styles/variables/colors';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubSquare, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import hexa from '../../constants/hexacommunity.json';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { AppBar, Toolbar } from "@material-ui/core/";
+import { COLORS, SOCIAL_MEDIA_COLORS } from "../../styles/variables/colors";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithubSquare,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import hexa from "../../constants/hexacommunity.json";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    top: 'auto',
-    bottom: 0
+    top: "auto",
+    bottom: 0,
   },
   socialAccountsBar: {
     background: COLORS.navBar,
-    display: 'flex',
-    justifyContent: 'center',
-    listStyle: 'none',
-    minHeight: '60px'
-  },
-  mobileSocialAccountsBar: {
-    background: COLORS.navBar,
-    display: 'flex',
-    justifyContent: 'center',
-    listStyle: 'none',
-    minHeight: '96px'
+    display: "flex",
+    justifyContent: "center",
+    listStyle: "none",
+    minHeight: "60px",
   },
   socialLinkItem: {
-    transition: 'transform 250ms',
-    margin: '0 32px',
+    transition: "transform 250ms",
+    margin: "0 32px",
 
-    '&:hover': {
-      transform: 'translateY(-2px)'
-    }
-  },
-  mobilLinkItem: {
-    margin: '0 64px'
+    "&:hover": {
+      transform: "translateY(-2px)",
+    },
   },
   icon: {
-    color: '#fff'
+    color: "#fff",
   },
   github: {
-    '&:hover path': {
-      color: SOCIAL_MEDIA_COLORS.github
-    }
+    "&:hover path": {
+      color: SOCIAL_MEDIA_COLORS.github,
+    },
   },
   twitter: {
-    '&:hover path': {
-      color: SOCIAL_MEDIA_COLORS.twitter
-    }
+    "&:hover path": {
+      color: SOCIAL_MEDIA_COLORS.twitter,
+    },
   },
   instagram: {
-    '&:hover path': {
-      color: SOCIAL_MEDIA_COLORS.instagram
-    }
-  }
+    "&:hover path": {
+      color: SOCIAL_MEDIA_COLORS.instagram,
+    },
+  },
 }));
 
 export const SocialAccountsBar = () => {
   const classes = useStyles();
 
-  let iconCss = isMobile ? classes.mobilLinkItem : classes.socialLinkItem;
-  let iconSize = isMobile ? '5x' : '2x';
-  let barCss = isMobile ? classes.mobileSocialAccountsBar : classes.socialAccountsBar;
-
   const accounts = hexa.accounts;
-
   return (
     <AppBar position="fixed" className={classes.appBar}>
-      <Toolbar className={barCss}>
-        {renderSocialMediaIcons({ classes, accounts, iconCss, iconSize })}
+      <Toolbar className={classes.socialAccountsBar}>
+        {renderSocialMediaIcons({ classes, accounts })}
       </Toolbar>
     </AppBar>
   );
 };
 
-const renderSocialMediaIcons = ({ classes, accounts, iconCss, iconSize }) => {
+const renderSocialMediaIcons = ({ classes, accounts }) => {
   return (
     <>
-      <li className={iconCss}>
+      <li className={classes.socialLinkItem}>
         <a
           href={accounts[0].url}
           rel="noopener noreferrer"
           target="_blank"
-          className={classes.github}>
-          <FontAwesomeIcon className={classes.icon} icon={faGithubSquare} size={iconSize} />
+          className={classes.github}
+        >
+          <FontAwesomeIcon
+            className={classes.icon}
+            icon={faGithubSquare}
+            size="2x"
+          />
         </a>
       </li>
 
-      <li className={iconCss}>
+      <li className={classes.socialLinkItem}>
         <a
           href={accounts[1].url}
           rel="noopener noreferrer"
           target="_blank"
-          className={classes.twitter}>
-          <FontAwesomeIcon className={classes.icon} icon={faTwitter} size={iconSize} />
+          className={classes.twitter}
+        >
+          <FontAwesomeIcon
+            className={classes.icon}
+            icon={faTwitter}
+            size="2x"
+          />
         </a>
       </li>
 
-      <li className={iconCss}>
+      <li className={classes.socialLinkItem}>
         <a
           href={accounts[2].url}
           rel="noopener noreferrer"
           target="_blank"
-          className={classes.instagram}>
-          <FontAwesomeIcon className={classes.icon} icon={faInstagram} size={iconSize} />
+          className={classes.instagram}
+        >
+          <FontAwesomeIcon
+            className={classes.icon}
+            icon={faInstagram}
+            size="2x"
+          />
         </a>
       </li>
     </>
