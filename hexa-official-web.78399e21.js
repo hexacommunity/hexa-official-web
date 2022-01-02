@@ -86169,7 +86169,26 @@ Object.keys(_Zoom).forEach(function (key) {
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./colors":"node_modules/@material-ui/core/esm/colors/index.js","./styles":"node_modules/@material-ui/core/esm/styles/index.js","./utils":"node_modules/@material-ui/core/esm/utils/index.js","./Accordion":"node_modules/@material-ui/core/esm/Accordion/index.js","./AccordionActions":"node_modules/@material-ui/core/esm/AccordionActions/index.js","./AccordionDetails":"node_modules/@material-ui/core/esm/AccordionDetails/index.js","./AccordionSummary":"node_modules/@material-ui/core/esm/AccordionSummary/index.js","./AppBar":"node_modules/@material-ui/core/esm/AppBar/index.js","./Avatar":"node_modules/@material-ui/core/esm/Avatar/index.js","./Backdrop":"node_modules/@material-ui/core/esm/Backdrop/index.js","./Badge":"node_modules/@material-ui/core/esm/Badge/index.js","./BottomNavigation":"node_modules/@material-ui/core/esm/BottomNavigation/index.js","./BottomNavigationAction":"node_modules/@material-ui/core/esm/BottomNavigationAction/index.js","./Box":"node_modules/@material-ui/core/esm/Box/index.js","./Breadcrumbs":"node_modules/@material-ui/core/esm/Breadcrumbs/index.js","./Button":"node_modules/@material-ui/core/esm/Button/index.js","./ButtonBase":"node_modules/@material-ui/core/esm/ButtonBase/index.js","./ButtonGroup":"node_modules/@material-ui/core/esm/ButtonGroup/index.js","./Card":"node_modules/@material-ui/core/esm/Card/index.js","./CardActionArea":"node_modules/@material-ui/core/esm/CardActionArea/index.js","./CardActions":"node_modules/@material-ui/core/esm/CardActions/index.js","./CardContent":"node_modules/@material-ui/core/esm/CardContent/index.js","./CardHeader":"node_modules/@material-ui/core/esm/CardHeader/index.js","./CardMedia":"node_modules/@material-ui/core/esm/CardMedia/index.js","./Checkbox":"node_modules/@material-ui/core/esm/Checkbox/index.js","./Chip":"node_modules/@material-ui/core/esm/Chip/index.js","./CircularProgress":"node_modules/@material-ui/core/esm/CircularProgress/index.js","./ClickAwayListener":"node_modules/@material-ui/core/esm/ClickAwayListener/index.js","./Collapse":"node_modules/@material-ui/core/esm/Collapse/index.js","./Container":"node_modules/@material-ui/core/esm/Container/index.js","./CssBaseline":"node_modules/@material-ui/core/esm/CssBaseline/index.js","./Dialog":"node_modules/@material-ui/core/esm/Dialog/index.js","./DialogActions":"node_modules/@material-ui/core/esm/DialogActions/index.js","./DialogContent":"node_modules/@material-ui/core/esm/DialogContent/index.js","./DialogContentText":"node_modules/@material-ui/core/esm/DialogContentText/index.js","./DialogTitle":"node_modules/@material-ui/core/esm/DialogTitle/index.js","./Divider":"node_modules/@material-ui/core/esm/Divider/index.js","./Drawer":"node_modules/@material-ui/core/esm/Drawer/index.js","./ExpansionPanel":"node_modules/@material-ui/core/esm/ExpansionPanel/index.js","./ExpansionPanelActions":"node_modules/@material-ui/core/esm/ExpansionPanelActions/index.js","./ExpansionPanelDetails":"node_modules/@material-ui/core/esm/ExpansionPanelDetails/index.js","./ExpansionPanelSummary":"node_modules/@material-ui/core/esm/ExpansionPanelSummary/index.js","./Fab":"node_modules/@material-ui/core/esm/Fab/index.js","./Fade":"node_modules/@material-ui/core/esm/Fade/index.js","./FilledInput":"node_modules/@material-ui/core/esm/FilledInput/index.js","./FormControl":"node_modules/@material-ui/core/esm/FormControl/index.js","./FormControlLabel":"node_modules/@material-ui/core/esm/FormControlLabel/index.js","./FormGroup":"node_modules/@material-ui/core/esm/FormGroup/index.js","./FormHelperText":"node_modules/@material-ui/core/esm/FormHelperText/index.js","./FormLabel":"node_modules/@material-ui/core/esm/FormLabel/index.js","./Grid":"node_modules/@material-ui/core/esm/Grid/index.js","./GridList":"node_modules/@material-ui/core/esm/GridList/index.js","./GridListTile":"node_modules/@material-ui/core/esm/GridListTile/index.js","./GridListTileBar":"node_modules/@material-ui/core/esm/GridListTileBar/index.js","./Grow":"node_modules/@material-ui/core/esm/Grow/index.js","./Hidden":"node_modules/@material-ui/core/esm/Hidden/index.js","./Icon":"node_modules/@material-ui/core/esm/Icon/index.js","./IconButton":"node_modules/@material-ui/core/esm/IconButton/index.js","./ImageList":"node_modules/@material-ui/core/esm/ImageList/index.js","./ImageListItem":"node_modules/@material-ui/core/esm/ImageListItem/index.js","./ImageListItemBar":"node_modules/@material-ui/core/esm/ImageListItemBar/index.js","./Input":"node_modules/@material-ui/core/esm/Input/index.js","./InputAdornment":"node_modules/@material-ui/core/esm/InputAdornment/index.js","./InputBase":"node_modules/@material-ui/core/esm/InputBase/index.js","./InputLabel":"node_modules/@material-ui/core/esm/InputLabel/index.js","./LinearProgress":"node_modules/@material-ui/core/esm/LinearProgress/index.js","./Link":"node_modules/@material-ui/core/esm/Link/index.js","./List":"node_modules/@material-ui/core/esm/List/index.js","./ListItem":"node_modules/@material-ui/core/esm/ListItem/index.js","./ListItemAvatar":"node_modules/@material-ui/core/esm/ListItemAvatar/index.js","./ListItemIcon":"node_modules/@material-ui/core/esm/ListItemIcon/index.js","./ListItemSecondaryAction":"node_modules/@material-ui/core/esm/ListItemSecondaryAction/index.js","./ListItemText":"node_modules/@material-ui/core/esm/ListItemText/index.js","./ListSubheader":"node_modules/@material-ui/core/esm/ListSubheader/index.js","./Menu":"node_modules/@material-ui/core/esm/Menu/index.js","./MenuItem":"node_modules/@material-ui/core/esm/MenuItem/index.js","./MenuList":"node_modules/@material-ui/core/esm/MenuList/index.js","./MobileStepper":"node_modules/@material-ui/core/esm/MobileStepper/index.js","./Modal":"node_modules/@material-ui/core/esm/Modal/index.js","./NativeSelect":"node_modules/@material-ui/core/esm/NativeSelect/index.js","./NoSsr":"node_modules/@material-ui/core/esm/NoSsr/index.js","./OutlinedInput":"node_modules/@material-ui/core/esm/OutlinedInput/index.js","./Paper":"node_modules/@material-ui/core/esm/Paper/index.js","./Popover":"node_modules/@material-ui/core/esm/Popover/index.js","./Popper":"node_modules/@material-ui/core/esm/Popper/index.js","./Portal":"node_modules/@material-ui/core/esm/Portal/index.js","./Radio":"node_modules/@material-ui/core/esm/Radio/index.js","./RadioGroup":"node_modules/@material-ui/core/esm/RadioGroup/index.js","./RootRef":"node_modules/@material-ui/core/esm/RootRef/index.js","./Select":"node_modules/@material-ui/core/esm/Select/index.js","./Slide":"node_modules/@material-ui/core/esm/Slide/index.js","./Slider":"node_modules/@material-ui/core/esm/Slider/index.js","./Snackbar":"node_modules/@material-ui/core/esm/Snackbar/index.js","./SnackbarContent":"node_modules/@material-ui/core/esm/SnackbarContent/index.js","./Step":"node_modules/@material-ui/core/esm/Step/index.js","./StepButton":"node_modules/@material-ui/core/esm/StepButton/index.js","./StepConnector":"node_modules/@material-ui/core/esm/StepConnector/index.js","./StepContent":"node_modules/@material-ui/core/esm/StepContent/index.js","./StepIcon":"node_modules/@material-ui/core/esm/StepIcon/index.js","./StepLabel":"node_modules/@material-ui/core/esm/StepLabel/index.js","./Stepper":"node_modules/@material-ui/core/esm/Stepper/index.js","./SvgIcon":"node_modules/@material-ui/core/esm/SvgIcon/index.js","./SwipeableDrawer":"node_modules/@material-ui/core/esm/SwipeableDrawer/index.js","./Switch":"node_modules/@material-ui/core/esm/Switch/index.js","./Tab":"node_modules/@material-ui/core/esm/Tab/index.js","./Table":"node_modules/@material-ui/core/esm/Table/index.js","./TableBody":"node_modules/@material-ui/core/esm/TableBody/index.js","./TableCell":"node_modules/@material-ui/core/esm/TableCell/index.js","./TableContainer":"node_modules/@material-ui/core/esm/TableContainer/index.js","./TableFooter":"node_modules/@material-ui/core/esm/TableFooter/index.js","./TableHead":"node_modules/@material-ui/core/esm/TableHead/index.js","./TablePagination":"node_modules/@material-ui/core/esm/TablePagination/index.js","./TableRow":"node_modules/@material-ui/core/esm/TableRow/index.js","./TableSortLabel":"node_modules/@material-ui/core/esm/TableSortLabel/index.js","./Tabs":"node_modules/@material-ui/core/esm/Tabs/index.js","./TabScrollButton":"node_modules/@material-ui/core/esm/TabScrollButton/index.js","./TextField":"node_modules/@material-ui/core/esm/TextField/index.js","./TextareaAutosize":"node_modules/@material-ui/core/esm/TextareaAutosize/index.js","./Toolbar":"node_modules/@material-ui/core/esm/Toolbar/index.js","./Tooltip":"node_modules/@material-ui/core/esm/Tooltip/index.js","./Typography":"node_modules/@material-ui/core/esm/Typography/index.js","./Unstable_TrapFocus":"node_modules/@material-ui/core/esm/Unstable_TrapFocus/index.js","./useMediaQuery":"node_modules/@material-ui/core/esm/useMediaQuery/index.js","./useScrollTrigger":"node_modules/@material-ui/core/esm/useScrollTrigger/index.js","./withMobileDialog":"node_modules/@material-ui/core/esm/withMobileDialog/index.js","./withWidth":"node_modules/@material-ui/core/esm/withWidth/index.js","./Zoom":"node_modules/@material-ui/core/esm/Zoom/index.js"}],"node_modules/ua-parser-js/dist/ua-parser.min.js":[function(require,module,exports) {
+},{"./colors":"node_modules/@material-ui/core/esm/colors/index.js","./styles":"node_modules/@material-ui/core/esm/styles/index.js","./utils":"node_modules/@material-ui/core/esm/utils/index.js","./Accordion":"node_modules/@material-ui/core/esm/Accordion/index.js","./AccordionActions":"node_modules/@material-ui/core/esm/AccordionActions/index.js","./AccordionDetails":"node_modules/@material-ui/core/esm/AccordionDetails/index.js","./AccordionSummary":"node_modules/@material-ui/core/esm/AccordionSummary/index.js","./AppBar":"node_modules/@material-ui/core/esm/AppBar/index.js","./Avatar":"node_modules/@material-ui/core/esm/Avatar/index.js","./Backdrop":"node_modules/@material-ui/core/esm/Backdrop/index.js","./Badge":"node_modules/@material-ui/core/esm/Badge/index.js","./BottomNavigation":"node_modules/@material-ui/core/esm/BottomNavigation/index.js","./BottomNavigationAction":"node_modules/@material-ui/core/esm/BottomNavigationAction/index.js","./Box":"node_modules/@material-ui/core/esm/Box/index.js","./Breadcrumbs":"node_modules/@material-ui/core/esm/Breadcrumbs/index.js","./Button":"node_modules/@material-ui/core/esm/Button/index.js","./ButtonBase":"node_modules/@material-ui/core/esm/ButtonBase/index.js","./ButtonGroup":"node_modules/@material-ui/core/esm/ButtonGroup/index.js","./Card":"node_modules/@material-ui/core/esm/Card/index.js","./CardActionArea":"node_modules/@material-ui/core/esm/CardActionArea/index.js","./CardActions":"node_modules/@material-ui/core/esm/CardActions/index.js","./CardContent":"node_modules/@material-ui/core/esm/CardContent/index.js","./CardHeader":"node_modules/@material-ui/core/esm/CardHeader/index.js","./CardMedia":"node_modules/@material-ui/core/esm/CardMedia/index.js","./Checkbox":"node_modules/@material-ui/core/esm/Checkbox/index.js","./Chip":"node_modules/@material-ui/core/esm/Chip/index.js","./CircularProgress":"node_modules/@material-ui/core/esm/CircularProgress/index.js","./ClickAwayListener":"node_modules/@material-ui/core/esm/ClickAwayListener/index.js","./Collapse":"node_modules/@material-ui/core/esm/Collapse/index.js","./Container":"node_modules/@material-ui/core/esm/Container/index.js","./CssBaseline":"node_modules/@material-ui/core/esm/CssBaseline/index.js","./Dialog":"node_modules/@material-ui/core/esm/Dialog/index.js","./DialogActions":"node_modules/@material-ui/core/esm/DialogActions/index.js","./DialogContent":"node_modules/@material-ui/core/esm/DialogContent/index.js","./DialogContentText":"node_modules/@material-ui/core/esm/DialogContentText/index.js","./DialogTitle":"node_modules/@material-ui/core/esm/DialogTitle/index.js","./Divider":"node_modules/@material-ui/core/esm/Divider/index.js","./Drawer":"node_modules/@material-ui/core/esm/Drawer/index.js","./ExpansionPanel":"node_modules/@material-ui/core/esm/ExpansionPanel/index.js","./ExpansionPanelActions":"node_modules/@material-ui/core/esm/ExpansionPanelActions/index.js","./ExpansionPanelDetails":"node_modules/@material-ui/core/esm/ExpansionPanelDetails/index.js","./ExpansionPanelSummary":"node_modules/@material-ui/core/esm/ExpansionPanelSummary/index.js","./Fab":"node_modules/@material-ui/core/esm/Fab/index.js","./Fade":"node_modules/@material-ui/core/esm/Fade/index.js","./FilledInput":"node_modules/@material-ui/core/esm/FilledInput/index.js","./FormControl":"node_modules/@material-ui/core/esm/FormControl/index.js","./FormControlLabel":"node_modules/@material-ui/core/esm/FormControlLabel/index.js","./FormGroup":"node_modules/@material-ui/core/esm/FormGroup/index.js","./FormHelperText":"node_modules/@material-ui/core/esm/FormHelperText/index.js","./FormLabel":"node_modules/@material-ui/core/esm/FormLabel/index.js","./Grid":"node_modules/@material-ui/core/esm/Grid/index.js","./GridList":"node_modules/@material-ui/core/esm/GridList/index.js","./GridListTile":"node_modules/@material-ui/core/esm/GridListTile/index.js","./GridListTileBar":"node_modules/@material-ui/core/esm/GridListTileBar/index.js","./Grow":"node_modules/@material-ui/core/esm/Grow/index.js","./Hidden":"node_modules/@material-ui/core/esm/Hidden/index.js","./Icon":"node_modules/@material-ui/core/esm/Icon/index.js","./IconButton":"node_modules/@material-ui/core/esm/IconButton/index.js","./ImageList":"node_modules/@material-ui/core/esm/ImageList/index.js","./ImageListItem":"node_modules/@material-ui/core/esm/ImageListItem/index.js","./ImageListItemBar":"node_modules/@material-ui/core/esm/ImageListItemBar/index.js","./Input":"node_modules/@material-ui/core/esm/Input/index.js","./InputAdornment":"node_modules/@material-ui/core/esm/InputAdornment/index.js","./InputBase":"node_modules/@material-ui/core/esm/InputBase/index.js","./InputLabel":"node_modules/@material-ui/core/esm/InputLabel/index.js","./LinearProgress":"node_modules/@material-ui/core/esm/LinearProgress/index.js","./Link":"node_modules/@material-ui/core/esm/Link/index.js","./List":"node_modules/@material-ui/core/esm/List/index.js","./ListItem":"node_modules/@material-ui/core/esm/ListItem/index.js","./ListItemAvatar":"node_modules/@material-ui/core/esm/ListItemAvatar/index.js","./ListItemIcon":"node_modules/@material-ui/core/esm/ListItemIcon/index.js","./ListItemSecondaryAction":"node_modules/@material-ui/core/esm/ListItemSecondaryAction/index.js","./ListItemText":"node_modules/@material-ui/core/esm/ListItemText/index.js","./ListSubheader":"node_modules/@material-ui/core/esm/ListSubheader/index.js","./Menu":"node_modules/@material-ui/core/esm/Menu/index.js","./MenuItem":"node_modules/@material-ui/core/esm/MenuItem/index.js","./MenuList":"node_modules/@material-ui/core/esm/MenuList/index.js","./MobileStepper":"node_modules/@material-ui/core/esm/MobileStepper/index.js","./Modal":"node_modules/@material-ui/core/esm/Modal/index.js","./NativeSelect":"node_modules/@material-ui/core/esm/NativeSelect/index.js","./NoSsr":"node_modules/@material-ui/core/esm/NoSsr/index.js","./OutlinedInput":"node_modules/@material-ui/core/esm/OutlinedInput/index.js","./Paper":"node_modules/@material-ui/core/esm/Paper/index.js","./Popover":"node_modules/@material-ui/core/esm/Popover/index.js","./Popper":"node_modules/@material-ui/core/esm/Popper/index.js","./Portal":"node_modules/@material-ui/core/esm/Portal/index.js","./Radio":"node_modules/@material-ui/core/esm/Radio/index.js","./RadioGroup":"node_modules/@material-ui/core/esm/RadioGroup/index.js","./RootRef":"node_modules/@material-ui/core/esm/RootRef/index.js","./Select":"node_modules/@material-ui/core/esm/Select/index.js","./Slide":"node_modules/@material-ui/core/esm/Slide/index.js","./Slider":"node_modules/@material-ui/core/esm/Slider/index.js","./Snackbar":"node_modules/@material-ui/core/esm/Snackbar/index.js","./SnackbarContent":"node_modules/@material-ui/core/esm/SnackbarContent/index.js","./Step":"node_modules/@material-ui/core/esm/Step/index.js","./StepButton":"node_modules/@material-ui/core/esm/StepButton/index.js","./StepConnector":"node_modules/@material-ui/core/esm/StepConnector/index.js","./StepContent":"node_modules/@material-ui/core/esm/StepContent/index.js","./StepIcon":"node_modules/@material-ui/core/esm/StepIcon/index.js","./StepLabel":"node_modules/@material-ui/core/esm/StepLabel/index.js","./Stepper":"node_modules/@material-ui/core/esm/Stepper/index.js","./SvgIcon":"node_modules/@material-ui/core/esm/SvgIcon/index.js","./SwipeableDrawer":"node_modules/@material-ui/core/esm/SwipeableDrawer/index.js","./Switch":"node_modules/@material-ui/core/esm/Switch/index.js","./Tab":"node_modules/@material-ui/core/esm/Tab/index.js","./Table":"node_modules/@material-ui/core/esm/Table/index.js","./TableBody":"node_modules/@material-ui/core/esm/TableBody/index.js","./TableCell":"node_modules/@material-ui/core/esm/TableCell/index.js","./TableContainer":"node_modules/@material-ui/core/esm/TableContainer/index.js","./TableFooter":"node_modules/@material-ui/core/esm/TableFooter/index.js","./TableHead":"node_modules/@material-ui/core/esm/TableHead/index.js","./TablePagination":"node_modules/@material-ui/core/esm/TablePagination/index.js","./TableRow":"node_modules/@material-ui/core/esm/TableRow/index.js","./TableSortLabel":"node_modules/@material-ui/core/esm/TableSortLabel/index.js","./Tabs":"node_modules/@material-ui/core/esm/Tabs/index.js","./TabScrollButton":"node_modules/@material-ui/core/esm/TabScrollButton/index.js","./TextField":"node_modules/@material-ui/core/esm/TextField/index.js","./TextareaAutosize":"node_modules/@material-ui/core/esm/TextareaAutosize/index.js","./Toolbar":"node_modules/@material-ui/core/esm/Toolbar/index.js","./Tooltip":"node_modules/@material-ui/core/esm/Tooltip/index.js","./Typography":"node_modules/@material-ui/core/esm/Typography/index.js","./Unstable_TrapFocus":"node_modules/@material-ui/core/esm/Unstable_TrapFocus/index.js","./useMediaQuery":"node_modules/@material-ui/core/esm/useMediaQuery/index.js","./useScrollTrigger":"node_modules/@material-ui/core/esm/useScrollTrigger/index.js","./withMobileDialog":"node_modules/@material-ui/core/esm/withMobileDialog/index.js","./withWidth":"node_modules/@material-ui/core/esm/withWidth/index.js","./Zoom":"node_modules/@material-ui/core/esm/Zoom/index.js"}],"src/styles/variables/colors.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.SOCIAL_MEDIA_COLORS = exports.COLORS = void 0;
+var COLORS = {
+  navBar: '#030E12',
+  backgroundColor: '#fff'
+};
+exports.COLORS = COLORS;
+var SOCIAL_MEDIA_COLORS = {
+  github: '#812290',
+  twitter: '#32aae2',
+  instagram: '#d6249f',
+  linkedin: '#2578b5'
+};
+exports.SOCIAL_MEDIA_COLORS = SOCIAL_MEDIA_COLORS;
+},{}],"node_modules/ua-parser-js/dist/ua-parser.min.js":[function(require,module,exports) {
 var define;
 /* UAParser.js v0.7.31
    Copyright © 2012-2021 Faisal Salman <f@faisalman.com>
@@ -87262,26 +87281,138 @@ exports.useDeviceSelectors = useDeviceSelectors;
 exports.useMobileOrientation = useMobileOrientation;
 exports.withOrientationChange = withOrientationChange;
 
-},{"react":"node_modules/react/index.js","ua-parser-js/dist/ua-parser.min":"node_modules/ua-parser-js/dist/ua-parser.min.js"}],"src/styles/variables/colors.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","ua-parser-js/dist/ua-parser.min":"node_modules/ua-parser-js/dist/ua-parser.min.js"}],"src/styles/images/logo_white.png":[function(require,module,exports) {
+module.exports = "/logo_white.39339d75.png";
+},{}],"src/components/common/navbar/Logo.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.SOCIAL_MEDIA_COLORS = exports.COLORS = void 0;
-var COLORS = {
-  navBar: '#030E12',
-  backgroundColor: '#fff'
+exports.Logo = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _core = require("@material-ui/core");
+
+var _reactDeviceDetect = require("react-device-detect");
+
+var _logo_white = _interopRequireDefault(require("../../../styles/images/logo_white.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var useStyles = (0, _core.makeStyles)(function (theme) {
+  return {
+    logoContainer: {
+      width: 'auto'
+    },
+    logoLink: {
+      display: 'flex',
+      alignItems: 'center',
+      color: '#000',
+      '&:focus, &:hover, &:visited, &:link, &:active': {
+        textDecoration: 'none'
+      }
+    }
+  };
+});
+
+var Logo = function Logo() {
+  var classes = useStyles();
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: classes.logoContainer
+  }, _reactDeviceDetect.isMobile ? /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: classes.logoLink,
+    to: "/"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _logo_white.default,
+    alt: "logo",
+    height: "64px"
+  })) : /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: classes.logoLink,
+    to: "/"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _logo_white.default,
+    alt: "logo",
+    height: "36px"
+  })));
 };
-exports.COLORS = COLORS;
-var SOCIAL_MEDIA_COLORS = {
-  github: '#812290',
-  twitter: '#32aae2',
-  instagram: '#d6249f',
-  discord: '#8496DC'
+
+exports.Logo = Logo;
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","../../../styles/images/logo_white.png":"src/styles/images/logo_white.png"}],"src/components/common/Navbar.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Navbar = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _core = require("@material-ui/core");
+
+var _colors = require("../../styles/variables/colors");
+
+var _Logo = require("./navbar/Logo");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var useStyles = (0, _core.makeStyles)(function (theme) {
+  var _navbarContainer;
+
+  return {
+    navbarContainer: (_navbarContainer = {
+      background: _colors.COLORS.navBar,
+      minHeight: '60px'
+    }, _defineProperty(_navbarContainer, theme.breakpoints.down('sm'), {
+      minHeight: '96px'
+    }), _defineProperty(_navbarContainer, "display", 'flex'), _defineProperty(_navbarContainer, "justifyContent", 'space-between'), _defineProperty(_navbarContainer, "alignItems", 'center'), _navbarContainer),
+    navLink: {
+      marginLeft: '1.5vw',
+      marginRight: '1.5vw',
+      cursor: 'pointer',
+      textAlign: 'center',
+      color: '#fff',
+      '&:focus, &:hover, &:visited, &:link, &:active': {
+        textDecoration: 'none'
+      }
+    }
+  };
+});
+
+var Navbar = function Navbar() {
+  var classes = useStyles();
+  var links = [{
+    path: '/team',
+    isProtected: 'false'
+  }];
+  return /*#__PURE__*/_react.default.createElement(_core.AppBar, {
+    position: "fixed"
+  }, /*#__PURE__*/_react.default.createElement(_core.Toolbar, {
+    className: classes.navbarContainer
+  }, /*#__PURE__*/_react.default.createElement(_Logo.Logo, null), renderNavLinks(classes, links)));
 };
-exports.SOCIAL_MEDIA_COLORS = SOCIAL_MEDIA_COLORS;
-},{}],"node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
+
+exports.Navbar = Navbar;
+
+var renderNavLinks = function renderNavLinks(classes, links) {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: classes.navMenu
+  }, links.map(function (link, key) {
+    return /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+      key: key,
+      className: classes.navLink,
+      to: link.path
+    }, "Kurucular");
+  }));
+};
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","../../styles/variables/colors":"src/styles/variables/colors.js","./navbar/Logo":"src/components/common/navbar/Logo.jsx"}],"node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
@@ -93391,7 +93522,7 @@ var _iconsCache = {
   faZhihu: faZhihu
 };
 exports.fab = _iconsCache;
-},{}],"src/constants/socialMediaAccounts.json":[function(require,module,exports) {
+},{}],"src/constants/hexacommunity.json":[function(require,module,exports) {
 module.exports = {
   "accounts": [{
     "name": "github",
@@ -93402,12 +93533,9 @@ module.exports = {
   }, {
     "name": "instagram",
     "url": "https://www.instagram.com/hexa_community"
-  }, {
-    "name": "discord",
-    "url": "https://discord.gg/dqGPPZrR"
   }]
 };
-},{}],"src/components/home/SocialAccountsBar.jsx":[function(require,module,exports) {
+},{}],"src/components/common/SocialAccountsBar.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -93429,7 +93557,7 @@ var _reactFontawesome = require("@fortawesome/react-fontawesome");
 
 var _freeBrandsSvgIcons = require("@fortawesome/free-brands-svg-icons");
 
-var _socialMediaAccounts = _interopRequireDefault(require("../../constants/socialMediaAccounts.json"));
+var _hexacommunity = _interopRequireDefault(require("../../constants/hexacommunity.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -93443,12 +93571,12 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
     },
     socialAccountsBar: _defineProperty({
       background: _colors.COLORS.navBar,
-      minHeight: '10vh',
       display: 'flex',
       justifyContent: 'center',
-      listStyle: 'none'
+      listStyle: 'none',
+      minHeight: '60px'
     }, theme.breakpoints.down('sm'), {
-      minHeight: '18vh'
+      minHeight: '96px'
     }),
     socialLinkItem: {
       transition: 'transform 250ms',
@@ -93477,31 +93605,41 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
       '&:hover path': {
         color: _colors.SOCIAL_MEDIA_COLORS.instagram
       }
-    },
-    discord: {
-      '&:hover path': {
-        color: _colors.SOCIAL_MEDIA_COLORS.discord
-      }
     }
   };
 });
 
 var SocialAccountsBar = function SocialAccountsBar() {
   var classes = useStyles();
-  var iconSize = '3x';
   var iconCss = _reactDeviceDetect.isMobile ? classes.mobilLinkItem : classes.socialLinkItem;
+  var iconSize = '2x';
 
   if (_reactDeviceDetect.isMobile) {
     iconSize = '6x';
   }
 
-  var accounts = _socialMediaAccounts.default.accounts;
+  var accounts = _hexacommunity.default.accounts;
   return /*#__PURE__*/_react.default.createElement(_core.AppBar, {
     position: "fixed",
     className: classes.appBar
   }, /*#__PURE__*/_react.default.createElement(_core.Toolbar, {
     className: classes.socialAccountsBar
-  }, /*#__PURE__*/_react.default.createElement("li", {
+  }, renderSocialMediaIcons({
+    classes: classes,
+    accounts: accounts,
+    iconCss: iconCss,
+    iconSize: iconSize
+  })));
+};
+
+exports.SocialAccountsBar = SocialAccountsBar;
+
+var renderSocialMediaIcons = function renderSocialMediaIcons(_ref) {
+  var classes = _ref.classes,
+      accounts = _ref.accounts,
+      iconCss = _ref.iconCss,
+      iconSize = _ref.iconSize;
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("li", {
     className: iconCss
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: accounts[0].url,
@@ -93534,25 +93672,12 @@ var SocialAccountsBar = function SocialAccountsBar() {
     className: classes.icon,
     icon: _freeBrandsSvgIcons.faInstagram,
     size: iconSize
-  }))), /*#__PURE__*/_react.default.createElement("li", {
-    className: iconCss
-  }, /*#__PURE__*/_react.default.createElement("a", {
-    href: accounts[3].url,
-    rel: "noopener noreferrer",
-    target: "_blank",
-    className: classes.discord
-  }, /*#__PURE__*/_react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
-    className: classes.icon,
-    icon: _freeBrandsSvgIcons.faDiscord,
-    size: iconSize
-  })))));
+  }))));
 };
-
-exports.SocialAccountsBar = SocialAccountsBar;
-},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/":"node_modules/@material-ui/core/esm/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","../../styles/variables/colors":"src/styles/variables/colors.js","@fortawesome/react-fontawesome":"node_modules/@fortawesome/react-fontawesome/index.es.js","@fortawesome/free-brands-svg-icons":"node_modules/@fortawesome/free-brands-svg-icons/index.es.js","../../constants/socialMediaAccounts.json":"src/constants/socialMediaAccounts.json"}],"src/constants/about.json":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/":"node_modules/@material-ui/core/esm/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","../../styles/variables/colors":"src/styles/variables/colors.js","@fortawesome/react-fontawesome":"node_modules/@fortawesome/react-fontawesome/index.es.js","@fortawesome/free-brands-svg-icons":"node_modules/@fortawesome/free-brands-svg-icons/index.es.js","../../constants/hexacommunity.json":"src/constants/hexacommunity.json"}],"src/constants/home.json":[function(require,module,exports) {
 module.exports = {
   "intro": "Hexa Yazılımcı Topluluğu, geleceği hedefleyen bağımsız bir topluluktur. Topluluk hakkında daha detaylı bilgi için sosyal medya kanallarımızı takip edebilirsin. Topluluğa katılarak birbirinden farklı yazılım alanlarında ücretsiz bilgi edinebilir ve geleceği yakalayabilirsin.",
-  "url": "https://forms.gle/2jDHaEW22djbUuLt8"
+  "joinCommunityURL": "https://forms.gle/2jDHaEW22djbUuLt8"
 };
 },{}],"src/components/home/JoinFormButton.jsx":[function(require,module,exports) {
 "use strict";
@@ -93570,7 +93695,7 @@ var _core = require("@material-ui/core/");
 
 var _reactDeviceDetect = require("react-device-detect");
 
-var _about = _interopRequireDefault(require("../../constants/about.json"));
+var _home = _interopRequireDefault(require("../../constants/home.json"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -93596,7 +93721,7 @@ var JoinFormButton = function JoinFormButton() {
   var classes = useStyles();
   return /*#__PURE__*/_react.default.createElement(_core.Link, {
     className: classes.link,
-    href: _about.default.url,
+    href: _home.default.joinCommunityURL,
     rel: "noopener noreferrer",
     target: "_blank"
   }, _reactDeviceDetect.isMobile ? /*#__PURE__*/_react.default.createElement(_core.Button, {
@@ -93610,7 +93735,7 @@ var JoinFormButton = function JoinFormButton() {
 };
 
 exports.JoinFormButton = JoinFormButton;
-},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/":"node_modules/@material-ui/core/esm/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","../../constants/about.json":"src/constants/about.json"}],"src/styles/images/logo_black.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/":"node_modules/@material-ui/core/esm/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","../../constants/home.json":"src/constants/home.json"}],"src/styles/images/logo_black.png":[function(require,module,exports) {
 module.exports = "/logo_black.63877b15.png";
 },{}],"src/components/home/Jumbotron.jsx":[function(require,module,exports) {
 "use strict";
@@ -93630,7 +93755,7 @@ var _reactDeviceDetect = require("react-device-detect");
 
 var _JoinFormButton = require("./JoinFormButton");
 
-var _about = _interopRequireDefault(require("../../constants/about.json"));
+var _home = _interopRequireDefault(require("../../constants/home.json"));
 
 var _logo_black = _interopRequireDefault(require("../../styles/images/logo_black.png"));
 
@@ -93674,11 +93799,270 @@ var Jumbotron = function Jumbotron() {
   }), /*#__PURE__*/_react.default.createElement(_core.Typography, {
     variant: "h6",
     className: introCss
-  }, _about.default.intro), /*#__PURE__*/_react.default.createElement(_JoinFormButton.JoinFormButton, null));
+  }, _home.default.intro), /*#__PURE__*/_react.default.createElement(_JoinFormButton.JoinFormButton, null));
 };
 
 exports.Jumbotron = Jumbotron;
-},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/":"node_modules/@material-ui/core/esm/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","./JoinFormButton":"src/components/home/JoinFormButton.jsx","../../constants/about.json":"src/constants/about.json","../../styles/images/logo_black.png":"src/styles/images/logo_black.png"}],"src/views/Home.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/":"node_modules/@material-ui/core/esm/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","./JoinFormButton":"src/components/home/JoinFormButton.jsx","../../constants/home.json":"src/constants/home.json","../../styles/images/logo_black.png":"src/styles/images/logo_black.png"}],"src/components/team/TeamCard.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.TeamCard = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactDeviceDetect = require("react-device-detect");
+
+var _core = require("@material-ui/core");
+
+var _reactFontawesome = require("@fortawesome/react-fontawesome");
+
+var _freeBrandsSvgIcons = require("@fortawesome/free-brands-svg-icons");
+
+var _colors = require("../../styles/variables/colors");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var useStyles = (0, _core.makeStyles)(function (theme) {
+  return {
+    teamCardContainer: {
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '350px',
+      alignItems: 'center',
+      boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+      paddingBottom: 24,
+      paddingTop: 24
+    },
+    image: {
+      width: '80%',
+      height: '80%',
+      borderRadius: '50%',
+      objectFit: 'cover'
+    },
+    content: {
+      textAlign: 'center'
+    },
+    socialMediaPanel: {
+      width: '100%',
+      marginTop: 'auto'
+    },
+    iconGrid: {
+      listStyle: 'none',
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingLeft: 24,
+      paddingRight: 24
+    },
+    socialLinkItem: {
+      margin: '0 24px',
+      transition: 'transform 250ms',
+      '&:hover': {
+        transform: 'translateY(-2px)'
+      }
+    },
+    mobilLinkItem: {
+      margin: '0 10px'
+    },
+    icon: {
+      color: '#000'
+    },
+    github: {
+      '&:hover path': {
+        color: _colors.SOCIAL_MEDIA_COLORS.github
+      }
+    },
+    twitter: {
+      '&:hover path': {
+        color: _colors.SOCIAL_MEDIA_COLORS.twitter
+      }
+    },
+    linkedin: {
+      '&:hover path': {
+        color: _colors.SOCIAL_MEDIA_COLORS.linkedin
+      }
+    }
+  };
+});
+
+var TeamCard = function TeamCard(props) {
+  var classes = useStyles();
+  var iconCss = _reactDeviceDetect.isMobile ? classes.mobilLinkItem : classes.socialLinkItem;
+  var iconSize = _reactDeviceDetect.isMobile ? '6x' : '2x';
+  return /*#__PURE__*/_react.default.createElement(_core.Card, {
+    key: props.person.name,
+    className: classes.teamCardContainer
+  }, /*#__PURE__*/_react.default.createElement(_core.CardMedia, {
+    component: "img",
+    className: classes.image,
+    image: props.imageSrc
+  }), /*#__PURE__*/_react.default.createElement(_core.CardContent, {
+    className: classes.content
+  }, /*#__PURE__*/_react.default.createElement(_core.Typography, {
+    variant: "h5",
+    gutterBottom: true
+  }, props.person.name), /*#__PURE__*/_react.default.createElement(_core.Typography, {
+    variant: "body2",
+    gutterBottom: true
+  }, props.person.title)), /*#__PURE__*/_react.default.createElement(_core.Box, {
+    className: classes.socialMediaPanel
+  }, /*#__PURE__*/_react.default.createElement(_core.Grid, {
+    container: true,
+    direction: "row",
+    className: classes.iconGrid
+  }, renderSocialMediaIcons({
+    props: props,
+    classes: classes,
+    iconCss: iconCss,
+    iconSize: iconSize
+  }))));
+};
+
+exports.TeamCard = TeamCard;
+
+var renderSocialMediaIcons = function renderSocialMediaIcons(_ref) {
+  var props = _ref.props,
+      classes = _ref.classes,
+      iconCss = _ref.iconCss,
+      iconSize = _ref.iconSize;
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("li", {
+    className: iconCss
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: props.person.links[0].twitter,
+    rel: "noopener noreferrer",
+    target: "_blank",
+    className: classes.twitter
+  }, /*#__PURE__*/_react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
+    className: classes.icon,
+    icon: _freeBrandsSvgIcons.faTwitter,
+    size: iconSize
+  }))), /*#__PURE__*/_react.default.createElement("li", {
+    className: iconCss
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: props.person.links[1].linkedin,
+    rel: "noopener noreferrer",
+    target: "_blank",
+    className: classes.linkedin
+  }, /*#__PURE__*/_react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
+    className: classes.icon,
+    icon: _freeBrandsSvgIcons.faLinkedin,
+    size: iconSize
+  }))), /*#__PURE__*/_react.default.createElement("li", {
+    className: iconCss
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: props.person.links[2].github,
+    rel: "noopener noreferrer",
+    target: "_blank",
+    className: classes.github
+  }, /*#__PURE__*/_react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
+    className: classes.icon,
+    icon: _freeBrandsSvgIcons.faGithubSquare,
+    size: iconSize
+  }))));
+};
+},{"react":"node_modules/react/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","@fortawesome/react-fontawesome":"node_modules/@fortawesome/react-fontawesome/index.es.js","@fortawesome/free-brands-svg-icons":"node_modules/@fortawesome/free-brands-svg-icons/index.es.js","../../styles/variables/colors":"src/styles/variables/colors.js"}],"src/constants/team.json":[function(require,module,exports) {
+module.exports = [{
+  "name": "Barış Cemal Onur",
+  "title": "MSc. Informatics Student Technical University of Munich",
+  "links": [{
+    "twitter": "https://twitter.com/bariscemalonur_"
+  }, {
+    "linkedin": "https://linkedin.com/in/bar%C4%B1%C5%9F-cemal-onur-714448138"
+  }, {
+    "github": "{https://github.com/barisconur"
+  }]
+}, {
+  "name": "Kerem Delikmen",
+  "title": "Machine Learning, R&D Engineer Anadolu Ajansı",
+  "links": [{
+    "twitter": "https://twitter.com/KDlkmn"
+  }, {
+    "linkedin": "https://www.linkedin.com/in/kerem-delikmen/"
+  }, {
+    "github": "https://github.com/KeremDlkmn"
+  }]
+}];
+},{}],"src/styles/images/baris_pp.jpeg":[function(require,module,exports) {
+module.exports = "/baris_pp.9f9ac9f2.jpeg";
+},{}],"src/styles/images/kerem_pp.jpeg":[function(require,module,exports) {
+module.exports = "/kerem_pp.ebd7651d.jpeg";
+},{}],"src/components/team/TeamMembers.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.TeamMembers = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _core = require("@material-ui/core");
+
+var _TeamCard = require("./TeamCard");
+
+var _team = _interopRequireDefault(require("../../constants/team.json"));
+
+var _baris_pp = _interopRequireDefault(require("../../styles/images/baris_pp.jpeg"));
+
+var _kerem_pp = _interopRequireDefault(require("../../styles/images/kerem_pp.jpeg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var useStyles = (0, _core.makeStyles)(function (theme) {
+  return {
+    teamMembersContainer: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginTop: '13vh'
+    },
+    teamMemberCardsPanel: {
+      alignContent: 'center',
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    title: {
+      marginBottom: '4vh'
+    }
+  };
+});
+
+var TeamMembers = function TeamMembers() {
+  var classes = useStyles();
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: classes.teamMembersContainer
+  }, /*#__PURE__*/_react.default.createElement(_core.Typography, {
+    variant: "h3",
+    component: "h3",
+    className: classes.title
+  }, "Kurucular"), /*#__PURE__*/_react.default.createElement(_core.Grid, {
+    container: true,
+    spacing: 6,
+    className: classes.teamMemberCardsPanel
+  }, /*#__PURE__*/_react.default.createElement(_core.Grid, {
+    item: true,
+    xs: 12,
+    sm: 6,
+    lg: 4
+  }, /*#__PURE__*/_react.default.createElement(_TeamCard.TeamCard, {
+    person: _team.default[0],
+    imageSrc: _baris_pp.default
+  })), /*#__PURE__*/_react.default.createElement(_core.Grid, {
+    item: true,
+    xs: 12,
+    sm: 6,
+    lg: 4
+  }, /*#__PURE__*/_react.default.createElement(_TeamCard.TeamCard, {
+    person: _team.default[1],
+    imageSrc: _kerem_pp.default
+  }))));
+};
+
+exports.TeamMembers = TeamMembers;
+},{"react":"node_modules/react/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","./TeamCard":"src/components/team/TeamCard.jsx","../../constants/team.json":"src/constants/team.json","../../styles/images/baris_pp.jpeg":"src/styles/images/baris_pp.jpeg","../../styles/images/kerem_pp.jpeg":"src/styles/images/kerem_pp.jpeg"}],"src/views/Home.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -93688,17 +94072,15 @@ exports.Home = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _styles = require("@material-ui/core/styles");
-
 var _core = require("@material-ui/core");
-
-var _SocialAccountsBar = require("../components/home/SocialAccountsBar");
 
 var _Jumbotron = require("../components/home/Jumbotron");
 
+var _TeamMembers = require("../components/team/TeamMembers");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var useStyles = (0, _styles.makeStyles)(function (theme) {
+var useStyles = (0, _core.makeStyles)(function (theme) {
   return {
     homeContainer: {
       display: 'flex',
@@ -93711,7 +94093,7 @@ var Home = function Home() {
   var classes = useStyles();
   return /*#__PURE__*/_react.default.createElement("div", {
     className: classes.homeContainer
-  }, /*#__PURE__*/_react.default.createElement(_SocialAccountsBar.SocialAccountsBar, null), /*#__PURE__*/_react.default.createElement(_core.Grid, {
+  }, /*#__PURE__*/_react.default.createElement(_core.Grid, {
     item: true,
     xs: 1,
     md: 2
@@ -93727,110 +94109,52 @@ var Home = function Home() {
 };
 
 exports.Home = Home;
-},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","../components/home/SocialAccountsBar":"src/components/home/SocialAccountsBar.jsx","../components/home/Jumbotron":"src/components/home/Jumbotron.jsx"}],"src/styles/images/logo_white.png":[function(require,module,exports) {
-module.exports = "/logo_white.39339d75.png";
-},{}],"src/components/common/Logo.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","../components/home/Jumbotron":"src/components/home/Jumbotron.jsx","../components/team/TeamMembers":"src/components/team/TeamMembers.jsx"}],"src/views/Team.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Logo = void 0;
+exports.Team = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
 var _core = require("@material-ui/core");
 
-var _reactDeviceDetect = require("react-device-detect");
-
-var _reactRouterDom = require("react-router-dom");
-
-var _logo_white = _interopRequireDefault(require("../../styles/images/logo_white.png"));
+var _TeamMembers = require("../components/team/TeamMembers");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var useStyles = (0, _core.makeStyles)(function (theme) {
   return {
-    logoContainer: {
-      width: 'auto'
-    },
-    logoLink: {
+    teamContainer: {
       display: 'flex',
-      alignItems: 'center',
-      color: '#000',
-      '&:focus, &:hover, &:visited, &:link, &:active': {
-        textDecoration: 'none'
-      }
+      width: '100vw'
     }
   };
 });
 
-var Logo = function Logo() {
+var Team = function Team() {
   var classes = useStyles();
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: classes.logoContainer
-  }, _reactDeviceDetect.isMobile ? /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    className: classes.logoLink,
-    to: "/"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _logo_white.default,
-    alt: "logo",
-    height: "80px"
-  })) : /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-    className: classes.logoLink,
-    to: "/"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _logo_white.default,
-    alt: "logo",
-    height: "48px"
-  })));
+    className: classes.teamContainer
+  }, /*#__PURE__*/_react.default.createElement(_core.Grid, {
+    item: true,
+    xs: 1,
+    md: 2
+  }), /*#__PURE__*/_react.default.createElement(_core.Grid, {
+    item: true,
+    xs: 10,
+    md: 8
+  }, /*#__PURE__*/_react.default.createElement(_TeamMembers.TeamMembers, null)), /*#__PURE__*/_react.default.createElement(_core.Grid, {
+    item: true,
+    xs: 1,
+    md: 2
+  }));
 };
 
-exports.Logo = Logo;
-},{"react":"node_modules/react/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","react-device-detect":"node_modules/react-device-detect/dist/lib.js","react-router-dom":"node_modules/react-router-dom/index.js","../../styles/images/logo_white.png":"src/styles/images/logo_white.png"}],"src/components/common/Navbar.jsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Navbar = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _styles = require("@material-ui/core/styles");
-
-var _core = require("@material-ui/core/");
-
-var _colors = require("../../styles/variables/colors");
-
-var _Logo = require("./Logo");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var useStyles = (0, _styles.makeStyles)(function (theme) {
-  return {
-    navbarContainer: _defineProperty({
-      background: _colors.COLORS.navBar,
-      minHeight: '10vh'
-    }, theme.breakpoints.down('sm'), {
-      minHeight: '18vh'
-    })
-  };
-});
-
-var Navbar = function Navbar() {
-  var classes = useStyles();
-  return /*#__PURE__*/_react.default.createElement(_core.AppBar, {
-    position: "fixed"
-  }, /*#__PURE__*/_react.default.createElement(_core.Toolbar, {
-    className: classes.navbarContainer
-  }, /*#__PURE__*/_react.default.createElement(_Logo.Logo, null)));
-};
-
-exports.Navbar = Navbar;
-},{"react":"node_modules/react/index.js","@material-ui/core/styles":"node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/":"node_modules/@material-ui/core/esm/index.js","../../styles/variables/colors":"src/styles/variables/colors.js","./Logo":"src/components/common/Logo.jsx"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+exports.Team = Team;
+},{"react":"node_modules/react/index.js","@material-ui/core":"node_modules/@material-ui/core/esm/index.js","../components/team/TeamMembers":"src/components/team/TeamMembers.jsx"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -93902,7 +94226,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/App.jsx":[function(require,module,exports) {
+},{"./fonts/Poppins/Poppins-Regular.ttf":[["Poppins-Regular.31fcae71.ttf","src/fonts/Poppins/Poppins-Regular.ttf"],"src/fonts/Poppins/Poppins-Regular.ttf"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/App.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -93914,26 +94238,33 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
+var _Navbar = require("./components/common/Navbar");
+
+var _SocialAccountsBar = require("./components/common/SocialAccountsBar");
+
 var _Home = require("./views/Home");
 
-var _Navbar = require("./components/common/Navbar");
+var _Team = require("./views/Team");
 
 require("./App.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var App = function App() {
-  return routing;
+  return ROUTER;
 };
 
 exports.App = App;
 
-var routing = /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_Navbar.Navbar, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Routes, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+var ROUTER = /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_Navbar.Navbar, null), /*#__PURE__*/_react.default.createElement(_SocialAccountsBar.SocialAccountsBar, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Routes, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
   exact: true,
   path: "/",
   element: /*#__PURE__*/_react.default.createElement(_Home.Home, null)
+}), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  path: "/team",
+  element: /*#__PURE__*/_react.default.createElement(_Team.Team, null)
 })));
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/index.js","./views/Home":"src/views/Home.jsx","./components/common/Navbar":"src/components/common/Navbar.jsx","./App.css":"src/App.css"}],"src/styles/variables/themes.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/index.js","./components/common/Navbar":"src/components/common/Navbar.jsx","./components/common/SocialAccountsBar":"src/components/common/SocialAccountsBar.jsx","./views/Home":"src/views/Home.jsx","./views/Team":"src/views/Team.jsx","./App.css":"src/App.css"}],"src/styles/variables/themes.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -93948,6 +94279,9 @@ var MAIN_THEME = {
     background: {
       default: _colors.COLORS.backgroundColor
     }
+  },
+  typography: {
+    fontFamily: '"Poppins", serif'
   }
 };
 exports.MAIN_THEME = MAIN_THEME;
@@ -94002,7 +94336,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51472" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55752" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -3,8 +3,9 @@ body {
   margin: 0;
 }
 
-body {
-  min-height: 100vh;
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(/Poppins-Regular.31fcae71.ttf) format('truetype');
 }
 
 
