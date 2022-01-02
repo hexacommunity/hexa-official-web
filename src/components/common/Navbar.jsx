@@ -31,11 +31,8 @@ export const Navbar = () => {
   const classes = useStyles();
   const links = [
     {
-      component: (
-        <Link className={classes.navLink} to={'/team'}>
-          Kurucular
-        </Link>
-      )
+      path: '/team',
+      isProtected: 'false'
     }
   ];
 
@@ -50,5 +47,13 @@ export const Navbar = () => {
 };
 
 const renderNavLinks = (classes, links) => {
-  return <div className={classes.navMenu}>{links.map((link) => link.component)}</div>;
+  return (
+    <div className={classes.navMenu}>
+      {links.map((link, key) => (
+        <Link key={key} className={classes.navLink} to={link.path}>
+          Kurucular
+        </Link>
+      ))}
+    </div>
+  );
 };
