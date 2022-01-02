@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link, Button } from '@material-ui/core/';
 import { isMobile } from 'react-device-detect';
-import about from '../../constants/about.json';
+import home from '../../constants/home.json';
 
 const useStyles = makeStyles((theme) => ({
   link: {
@@ -23,7 +23,11 @@ const useStyles = makeStyles((theme) => ({
 export const JoinFormButton = () => {
   const classes = useStyles();
   return (
-    <Link className={classes.link} href={about.url} rel="noopener noreferrer" target="_blank">
+    <Link
+      className={classes.link}
+      href={home.joinCommunityURL}
+      rel="noopener noreferrer"
+      target="_blank">
       {isMobile ? (
         <Button className={classes.isMobileJoinButton} variant="outlined">
           Katıl

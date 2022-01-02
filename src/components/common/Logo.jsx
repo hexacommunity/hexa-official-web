@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core';
 import { isMobile } from 'react-device-detect';
-import { Link } from 'react-router-dom';
 import logoImage from '../../styles/images/logo_white.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -24,11 +24,11 @@ export const Logo = () => {
     <div className={classes.logoContainer}>
       {isMobile ? (
         <Link className={classes.logoLink} to="/">
-          <img src={logoImage} alt="logo" height="80px" />
+          <img src={logoImage} alt="logo" height="64px" />
         </Link>
       ) : (
         <Link className={classes.logoLink} to="/">
-          <img src={logoImage} alt="logo" height="48px" />
+          <img src={logoImage} alt="logo" height="36px" />
         </Link>
       )}
     </div>
