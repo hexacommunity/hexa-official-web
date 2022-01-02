@@ -93612,12 +93612,7 @@ var useStyles = (0, _styles.makeStyles)(function (theme) {
 var SocialAccountsBar = function SocialAccountsBar() {
   var classes = useStyles();
   var iconCss = _reactDeviceDetect.isMobile ? classes.mobilLinkItem : classes.socialLinkItem;
-  var iconSize = '2x';
-
-  if (_reactDeviceDetect.isMobile) {
-    iconSize = '6x';
-  }
-
+  var iconSize = _reactDeviceDetect.isMobile ? '4x' : '2x';
   var accounts = _hexacommunity.default.accounts;
   return /*#__PURE__*/_react.default.createElement(_core.AppBar, {
     position: "fixed",
@@ -94032,7 +94027,7 @@ var useStyles = (0, _core.makeStyles)(function (theme) {
 
 var TeamMembers = function TeamMembers() {
   var classes = useStyles();
-  return /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(_core.Container, {
     className: classes.teamMembersContainer
   }, /*#__PURE__*/_react.default.createElement(_core.Typography, {
     variant: "h3",
@@ -94045,7 +94040,6 @@ var TeamMembers = function TeamMembers() {
   }, /*#__PURE__*/_react.default.createElement(_core.Grid, {
     item: true,
     xs: 12,
-    sm: 6,
     lg: 4
   }, /*#__PURE__*/_react.default.createElement(_TeamCard.TeamCard, {
     person: _team.default[0],
@@ -94053,7 +94047,6 @@ var TeamMembers = function TeamMembers() {
   })), /*#__PURE__*/_react.default.createElement(_core.Grid, {
     item: true,
     xs: 12,
-    sm: 6,
     lg: 4
   }, /*#__PURE__*/_react.default.createElement(_TeamCard.TeamCard, {
     person: _team.default[1],
@@ -94336,7 +94329,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55752" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65117" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
