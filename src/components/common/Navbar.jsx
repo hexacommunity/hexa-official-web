@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { makeStyles, AppBar, Toolbar } from '@material-ui/core';
 import { COLORS } from '../../styles/variables/colors';
-import { Logo } from './Logo';
+import { Logo } from './navbar/Logo';
 
 const useStyles = makeStyles((theme) => ({
   navbarContainer: {

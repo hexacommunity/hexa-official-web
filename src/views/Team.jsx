@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles, Grid } from '@material-ui/core';
-import { TeamMembers } from '../components/home/TeamMembers';
+import { TeamMembers } from '../components/team/TeamMembers';
 
 const useStyles = makeStyles((theme) => ({
   teamContainer: {

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core';
 import { isMobile } from 'react-device-detect';
-import logoImage from '../../styles/images/logo_white.png';
+import logoImage from '../../../styles/images/logo_white.png';
 
 const useStyles = makeStyles((theme) => ({
   logoContainer: {

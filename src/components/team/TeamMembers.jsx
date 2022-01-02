@@ -9,15 +9,17 @@ const useStyles = makeStyles((theme) => ({
   teamMembersContainer: {
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '100vh',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginTop: '13vh'
   },
   teamMemberCardsPanel: {
     alignContent: 'center',
     justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: '1vh'
+    alignItems: 'center'
+  },
+  title: {
+    marginBottom: '4vh'
   }
 }));
 
@@ -25,7 +27,7 @@ export const TeamMembers = () => {
   const classes = useStyles();
   return (
     <div className={classes.teamMembersContainer}>
-      <Typography variant="h2" component="h2" gutterBottom>
+      <Typography variant="h3" component="h3" className={classes.title}>
         Kurucular
       </Typography>
       <Grid container spacing={6} className={classes.teamMemberCardsPanel}>

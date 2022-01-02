@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, Grid } from '@material-ui/core';
 import { Jumbotron } from '../components/home/Jumbotron';
-import { TeamMembers } from '../components/home/TeamMembers';
+import { TeamMembers } from '../components/team/TeamMembers';
 
 const useStyles = makeStyles((theme) => ({
   homeContainer: {
