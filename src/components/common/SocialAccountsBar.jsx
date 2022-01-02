@@ -57,11 +57,8 @@ export const SocialAccountsBar = () => {
   const classes = useStyles();
 
   let iconCss = isMobile ? classes.mobilLinkItem : classes.socialLinkItem;
-  let iconSize = '2x';
+  let iconSize = isMobile ? '4x' : '2x';
 
-  if (isMobile) {
-    iconSize = '6x';
-  }
   const accounts = hexa.accounts;
 
   return (
