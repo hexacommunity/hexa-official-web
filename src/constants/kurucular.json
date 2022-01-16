@@ -7,7 +7,7 @@
       { "name": "twitter", "url": "https://twitter.com/bariscemalonur_" },
       {
         "name": "linkedin",
-        "url": "https://linkedin.com/in/bar%C4%B1%C5%9F-cemal-onur-714448138"
+        "url": "https://www.linkedin.com/in/barisonur"
       },
       { "name": "github", "url": "https://github.com/barisconur" }
     ]
@@ -17,9 +17,12 @@
     "title": "Machine Learning, R&D Engineer",
     "at": " Anadolu Ajansı",
     "links": [
-      { "twitter": "https://twitter.com/KDlkmn" },
-      { "linkedin": "https://www.linkedin.com/in/kerem-delikmen/" },
-      { "github": "https://github.com/KeremDlkmn" }
+      { "name": "twitter", "url": "https://twitter.com/KDlkmn" },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/kerem-delikmen"
+      },
+      { "name": "github", "url": "https://github.com/KeremDlkmn" }
     ]
   }
 ]

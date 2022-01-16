@@ -7,17 +7,16 @@ import team from "../../constants/kurucular.json";
 
 const useStyles = makeStyles((theme) => ({
   teamMembersContainer: {
+    marginTop: "14.5vh",
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: "15vh",
+    },
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginTop: "12.5vh",
-    [theme.breakpoints.down("sm")]: {
-      marginTop: "20vh",
-      marginBottom: "15vh",
-    },
   },
   teamMemberCardsPanel: {
-    marginTop: "3.5vh",
+    marginTop: "2.5vh",
     alignContent: "center",
     justifyContent: "center",
     alignItems: "center",

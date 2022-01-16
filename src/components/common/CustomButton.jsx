@@ -1,16 +1,13 @@
-import Button from "@material-ui/core/Button";
-
-import { withStyles } from "@material-ui/core/styles";
+import { withStyles, Button } from "@material-ui/core";
 
 export const CustomButton = withStyles({
   root: {
     width: "100px",
-    paddingTop: "15px",
-    paddingBottom: "15px",
+    paddingTop: "10px",
+    paddingBottom: "10px",
     textAlign: "center",
     color: "#000",
     backgroundColor: "#FAFAFA",
-    color: "#000",
     border: "1px solid #000",
 
     "&:hover": {

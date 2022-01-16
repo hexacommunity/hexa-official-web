@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Button, makeStyles } from "@material-ui/core/";
+import { Link, makeStyles } from "@material-ui/core/";
 import { CustomButton } from "../common/CustomButton";
 import home from "../../constants/home.json";
 
