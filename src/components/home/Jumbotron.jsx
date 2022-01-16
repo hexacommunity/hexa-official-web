@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   intro: {
-    marginTop: "4vh",
+    marginTop: "6vh",
     [theme.breakpoints.down("sm")]: {
       fontSize: "14px",
     },

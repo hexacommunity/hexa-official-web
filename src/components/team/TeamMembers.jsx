@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Container, Grid, Typography } from "@material-ui/core";
+import { makeStyles, Grid, Typography } from "@material-ui/core";
 import { TeamCard } from "./TeamCard";
 import baris_pp from "../../styles/images/baris_pp.jpeg";
 import kerem_pp from "../../styles/images/kerem_pp.jpg";
@@ -10,34 +10,37 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginTop: "13vh",
+    marginTop: "12.5vh",
     [theme.breakpoints.down("sm")]: {
       marginTop: "20vh",
       marginBottom: "15vh",
     },
   },
   teamMemberCardsPanel: {
-    heigth: "100%",
+    marginTop: "3.5vh",
     alignContent: "center",
     justifyContent: "center",
     alignItems: "center",
   },
-  title: {
-    marginBottom: "4vh",
+  titleContainer: {
+    width: "calc(100% + 48px)",
+    textAlign: "center",
   },
 }));
 
 export const TeamMembers = () => {
   const classes = useStyles();
   return (
-    <Container className={classes.teamMembersContainer}>
-      <Typography variant="h3" className={classes.title}>
-        Kurucular
-      </Typography>
-      <Grid container spacing={6} className={classes.teamMemberCardsPanel}>
+    <div className={classes.teamMembersContainer}>
+      <div className={classes.titleContainer}>
+        <Typography variant="h3" className={classes.title}>
+          Kurucular
+        </Typography>
+      </div>
+      <Grid container spacing={5} className={classes.teamMemberCardsPanel}>
         {renderMemberCards()}
       </Grid>
-    </Container>
+    </div>
   );
 };
 

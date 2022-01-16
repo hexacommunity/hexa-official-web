@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Button, makeStyles } from "@material-ui/core/";
+import { CustomButton } from "../common/CustomButton";
 import home from "../../constants/home.json";
 
 const useStyles = makeStyles((theme) => ({
@@ -9,8 +10,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   joinButton: {
-    color: theme.palette.common.black,
-    marginTop: "4vh",
+    marginTop: "4.5vh",
+    fontSize: "16px",
+    letterSpacing: "2px",
   },
 }));
 
@@ -23,9 +25,7 @@ export const JoinFormButton = () => {
       rel="noopener noreferrer"
       target="_blank"
     >
-      <Button className={classes.joinButton} variant="outlined" size="large">
-        Katıl
-      </Button>
+      <CustomButton className={classes.joinButton}>Katıl</CustomButton>
     </Link>
   );
 };

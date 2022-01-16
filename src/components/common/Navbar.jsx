@@ -48,7 +48,7 @@ const renderNavLinks = (classes, links) => {
   return (
     <div className={classes.navMenu}>
       {links.map((link, key) => (
-        <Link key={key} className={classes.navLink} to={link.path}>
+        <Link className={classes.navLink} to={link.path} key={key}>
           {link.name}
         </Link>
       ))}
