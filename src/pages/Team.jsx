@@ -1,17 +1,16 @@
-import React from 'react';
-import { makeStyles, Grid } from '@material-ui/core';
-import { TeamMembers } from '../components/team/TeamMembers';
+import React from "react";
+import { makeStyles, Grid } from "@material-ui/core";
+import { TeamMembers } from "../components/team/TeamMembers";
 
 const useStyles = makeStyles((theme) => ({
   teamContainer: {
-    display: 'flex',
-    width: '100vw'
-  }
+    display: "flex",
+    width: "100vw",
+  },
 }));
 
 export const Team = () => {
   const classes = useStyles();
-
   return (
     <div className={classes.teamContainer}>
       <Grid item={true} xs={1} md={2} />

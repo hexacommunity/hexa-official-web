@@ -24,8 +24,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export const Navbar = () => {
-  const classes = useStyles();
-
   const links = [
     {
       name: "Kurucular",
@@ -34,6 +32,7 @@ export const Navbar = () => {
     },
   ];
 
+  const classes = useStyles();
   return (
     <AppBar position="fixed">
       <Toolbar className={classes.navbarContainer}>

@@ -49,13 +49,13 @@ export const SocialAccountsBar = () => {
   return (
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar className={classes.socialAccountsBar}>
-        {renderSocialMediaIcons(classes)}
+        {renderSocialMediaIcons({ classes })}
       </Toolbar>
     </AppBar>
   );
 };
 
-const renderSocialMediaIcons = (classes) => {
+const renderSocialMediaIcons = ({ classes }) => {
   const icons = [faGithubSquare, faTwitter, faInstagram];
   const links = hexa.socialMediaLinks;
 

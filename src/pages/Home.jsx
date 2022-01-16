@@ -1,12 +1,12 @@
-import React from 'react';
-import { makeStyles, Grid } from '@material-ui/core';
-import { Jumbotron } from '../components/home/Jumbotron';
+import React from "react";
+import { makeStyles, Grid } from "@material-ui/core";
+import { Jumbotron } from "../components/home/Jumbotron";
 
 const useStyles = makeStyles((theme) => ({
   homeContainer: {
-    display: 'flex',
-    width: '100vw'
-  }
+    display: "flex",
+    width: "100vw",
+  },
 }));
 
 export const Home = () => {
