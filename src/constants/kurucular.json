@@ -4,11 +4,12 @@
     "title": "MSc. Informatics Student",
     "at": " Technical University of Munich",
     "links": [
-      { "twitter": "https://twitter.com/bariscemalonur_" },
+      { "name": "twitter", "url": "https://twitter.com/bariscemalonur_" },
       {
-        "linkedin": "https://linkedin.com/in/bar%C4%B1%C5%9F-cemal-onur-714448138"
+        "name": "linkedin",
+        "url": "https://linkedin.com/in/bar%C4%B1%C5%9F-cemal-onur-714448138"
       },
-      { "github": "{https://github.com/barisconur" }
+      { "name": "github", "url": "https://github.com/barisconur" }
     ]
   },
   {

@@ -1,13 +1,12 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { AppBar, Toolbar } from "@material-ui/core/";
-import { COLORS, SOCIAL_MEDIA_COLORS } from "../../styles/variables/colors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithubSquare,
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { AppBar, Toolbar, makeStyles } from "@material-ui/core";
+import { SOCIAL_MEDIA_COLORS } from "../../styles/colors";
 import hexa from "../../constants/hexacommunity.json";
 
 const useStyles = makeStyles((theme) => ({
@@ -16,22 +15,17 @@ const useStyles = makeStyles((theme) => ({
     bottom: 0,
   },
   socialAccountsBar: {
-    background: COLORS.navBar,
+    backgroundColor: theme.palette.common.black,
+    minHeight: "60px",
     display: "flex",
     justifyContent: "center",
     listStyle: "none",
-    minHeight: "60px",
   },
   socialLinkItem: {
-    transition: "transform 250ms",
     margin: "0 32px",
-
-    "&:hover": {
-      transform: "translateY(-2px)",
-    },
   },
   icon: {
-    color: "#fff",
+    color: theme.palette.common.white,
   },
   github: {
     "&:hover path": {
@@ -52,64 +46,33 @@ const useStyles = makeStyles((theme) => ({
 
 export const SocialAccountsBar = () => {
   const classes = useStyles();
-
-  const accounts = hexa.accounts;
   return (
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar className={classes.socialAccountsBar}>
-        {renderSocialMediaIcons({ classes, accounts })}
+        {renderSocialMediaIcons(classes)}
       </Toolbar>
     </AppBar>
   );
 };
 
-const renderSocialMediaIcons = ({ classes, accounts }) => {
-  return (
-    <>
-      <li className={classes.socialLinkItem}>
-        <a
-          href={accounts[0].url}
-          rel="noopener noreferrer"
-          target="_blank"
-          className={classes.github}
-        >
-          <FontAwesomeIcon
-            className={classes.icon}
-            icon={faGithubSquare}
-            size="2x"
-          />
-        </a>
-      </li>
+const renderSocialMediaIcons = (classes) => {
+  const icons = [faGithubSquare, faTwitter, faInstagram];
+  const links = hexa.socialMediaLinks;
 
-      <li className={classes.socialLinkItem}>
+  let indents = [];
+  for (let i = 0; i < links.length; i++) {
+    indents.push(
+      <li className={classes.socialLinkItem} key={i}>
         <a
-          href={accounts[1].url}
+          href={links[i].url}
           rel="noopener noreferrer"
           target="_blank"
-          className={classes.twitter}
+          className={classes[links[i].name]}
         >
-          <FontAwesomeIcon
-            className={classes.icon}
-            icon={faTwitter}
-            size="2x"
-          />
+          <FontAwesomeIcon className={classes.icon} icon={icons[i]} size="2x" />
         </a>
       </li>
-
-      <li className={classes.socialLinkItem}>
-        <a
-          href={accounts[2].url}
-          rel="noopener noreferrer"
-          target="_blank"
-          className={classes.instagram}
-        >
-          <FontAwesomeIcon
-            className={classes.icon}
-            icon={faInstagram}
-            size="2x"
-          />
-        </a>
-      </li>
-    </>
-  );
+    );
+  }
+  return indents;
 };

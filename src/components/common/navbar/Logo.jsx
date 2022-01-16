@@ -8,9 +8,9 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
   },
   logoLink: {
+    color: theme.palette.common.black,
     display: "flex",
     alignItems: "center",
-    color: "#000",
     "&:focus, &:hover, &:visited, &:link, &:active": {
       textDecoration: "none",
     },

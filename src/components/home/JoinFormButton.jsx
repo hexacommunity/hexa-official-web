@@ -1,6 +1,5 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Link, Button } from "@material-ui/core/";
+import { Link, Button, makeStyles } from "@material-ui/core/";
 import home from "../../constants/home.json";
 
 const useStyles = makeStyles((theme) => ({
@@ -10,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   joinButton: {
-    color: "#000",
+    color: theme.palette.common.black,
     marginTop: "4vh",
   },
 }));

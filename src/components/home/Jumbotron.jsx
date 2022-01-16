@@ -1,9 +1,8 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core/";
+import { Typography, makeStyles } from "@material-ui/core";
 import { JoinFormButton } from "./JoinFormButton";
-import home from "../../constants/home.json";
 import hexaLogo from "../../styles/images/logo_black.png";
+import home from "../../constants/home.json";
 
 const useStyles = makeStyles((theme) => ({
   jumbotronContainer: {

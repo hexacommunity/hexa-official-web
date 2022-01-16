@@ -1,4 +1,10 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithubSquare,
+  faTwitter,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   makeStyles,
   Card,
@@ -8,13 +14,7 @@ import {
   Box,
   Grid,
 } from "@material-ui/core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithubSquare,
-  faTwitter,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { SOCIAL_MEDIA_COLORS } from "../../styles/variables/colors";
+import { SOCIAL_MEDIA_COLORS } from "../../styles/colors";
 
 const useStyles = makeStyles((theme) => ({
   teamCardContainer: {
@@ -51,13 +51,9 @@ const useStyles = makeStyles((theme) => ({
   },
   socialLinkItem: {
     margin: "0 18px",
-    transition: "transform 250ms",
-    "&:hover": {
-      transform: "translateY(-2px)",
-    },
   },
   icon: {
-    color: "#000",
+    color: theme.palette.common.black,
   },
   github: {
     "&:hover path": {
@@ -76,76 +72,43 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const TeamCard = (props) => {
+export const TeamCard = ({ member, imageSrc }) => {
   const classes = useStyles();
   return (
-    <Card key={props.person.name} className={classes.teamCardContainer}>
-      <CardMedia
-        component="img"
-        className={classes.image}
-        image={props.imageSrc}
-      />
+    <Card key={member.name} className={classes.teamCardContainer}>
+      <CardMedia component="img" className={classes.image} image={imageSrc} />
       <CardContent className={classes.content}>
-        <Typography variant="h5">{props.person.name}</Typography>
-        <Typography variant="body2">{props.person.title}</Typography>
-        <Typography variant="body2">{props.person.at}</Typography>
+        <Typography variant="h5">{member.name}</Typography>
+        <Typography variant="body2">{member.title}</Typography>
+        <Typography variant="body2">{member.at}</Typography>
       </CardContent>
       <Box className={classes.socialMediaPanel}>
         <Grid container direction="row" className={classes.iconGrid}>
-          {renderSocialMediaIcons({ props, classes })}
+          {renderSocialMediaIcons({ member, classes })}
         </Grid>
       </Box>
     </Card>
   );
 };
 
-const renderSocialMediaIcons = ({ props, classes }) => {
-  return (
-    <>
-      <li className={classes.socialLinkItem}>
-        <a
-          href={props.person.links[0].twitter}
-          rel="noopener noreferrer"
-          target="_blank"
-          className={classes.twitter}
-        >
-          <FontAwesomeIcon
-            className={classes.icon}
-            icon={faTwitter}
-            size="2x"
-          />
-        </a>
-      </li>
+const renderSocialMediaIcons = ({ member, classes }) => {
+  const icons = [faTwitter, faLinkedin, faGithubSquare];
+  const links = member.links;
 
-      <li className={classes.socialLinkItem}>
+  let indents = [];
+  for (let i = 0; i < links.length; i++) {
+    indents.push(
+      <li className={classes.socialLinkItem} key={i}>
         <a
-          href={props.person.links[1].linkedin}
+          href={links[i].url}
           rel="noopener noreferrer"
           target="_blank"
-          className={classes.linkedin}
+          className={classes[links[i].name]}
         >
-          <FontAwesomeIcon
-            className={classes.icon}
-            icon={faLinkedin}
-            size="2x"
-          />
+          <FontAwesomeIcon className={classes.icon} icon={icons[i]} size="2x" />
         </a>
       </li>
-
-      <li className={classes.socialLinkItem}>
-        <a
-          href={props.person.links[2].github}
-          rel="noopener noreferrer"
-          target="_blank"
-          className={classes.github}
-        >
-          <FontAwesomeIcon
-            className={classes.icon}
-            icon={faGithubSquare}
-            size="2x"
-          />
-        </a>
-      </li>
-    </>
-  );
+    );
+  }
+  return indents;
 };

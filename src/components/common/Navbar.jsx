@@ -1,23 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { makeStyles, AppBar, Toolbar } from "@material-ui/core";
-import { COLORS } from "../../styles/variables/colors";
 import { Logo } from "./navbar/Logo";
 
 const useStyles = makeStyles((theme) => ({
   navbarContainer: {
-    backgroundColor: COLORS.navBar,
+    backgroundColor: theme.palette.common.black,
     minHeight: "60px",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
   },
   navLink: {
+    color: theme.palette.common.white,
     marginLeft: "1.5vw",
     marginRight: "1.5vw",
     cursor: "pointer",
     textAlign: "center",
-    color: "#fff",
     "&:focus, &:hover, &:visited, &:link, &:active": {
       textDecoration: "none",
     },
@@ -29,7 +28,8 @@ export const Navbar = () => {
 
   const links = [
     {
-      path: "/team",
+      name: "Kurucular",
+      path: "/kurucular",
       isProtected: "false",
     },
   ];
@@ -49,7 +49,7 @@ const renderNavLinks = (classes, links) => {
     <div className={classes.navMenu}>
       {links.map((link, key) => (
         <Link key={key} className={classes.navLink} to={link.path}>
-          Kurucular
+          {link.name}
         </Link>
       ))}
     </div>
