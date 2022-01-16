@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.2b508081.css",
-    "main.js": "/static/js/main.24eac87e.js",
-    "static/media/baris_pp.jpeg": "/static/media/baris_pp.42a26ebd3ae9b673200b.jpeg",
+    "main.js": "/static/js/main.61d9820d.js",
     "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.8081832fc5cfbf634aa6.ttf",
+    "static/media/baris_pp.jpeg": "/static/media/baris_pp.47f115e1c39117534830.jpeg",
     "static/media/logo_white.png": "/static/media/logo_white.1b2049d3ffe637f165a4.png",
     "static/media/logo_black.png": "/static/media/logo_black.1598cc4beed5aebdf050.png",
     "index.html": "/index.html",
     "main.2b508081.css.map": "/static/css/main.2b508081.css.map",
-    "main.24eac87e.js.map": "/static/js/main.24eac87e.js.map"
+    "main.61d9820d.js.map": "/static/js/main.61d9820d.js.map"
   },
   "entrypoints": [
     "static/css/main.2b508081.css",
-    "static/js/main.24eac87e.js"
+    "static/js/main.61d9820d.js"
   ]
 }
